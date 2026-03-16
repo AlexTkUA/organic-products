@@ -1,0 +1,10 @@
+@import url("normalize.css");
+@import url("variables.css");
+@import url("components/header.css");
+@import url("components/logo.css");
+@import url("components/nav.css");
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}

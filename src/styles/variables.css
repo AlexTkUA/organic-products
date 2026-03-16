@@ -1,0 +1,21 @@
+:root {
+    /* colors */
+    --dark-teal-color: rgba(39, 76, 91, 1);
+    --aquamarine: rgba(126, 182, 147, 1);
+    --yellow: rgba(239, 211, 114, 1);
+    --light-gray:  rgba(212, 212, 212, 1);
+    --color-white-smoke: rgba(249, 248, 248, 1); /* дуже світлий, майже білий */
+    --color-mint-cream: rgba(239, 246, 241, 1);  /* м’який зелений / світлий м’ятний */
+    --color-slate-gray: rgba(82, 92, 96, 1);     /* темний сіро-синій / сланцевий */
+
+    /* font size */
+    --font-size-h1: 70px;
+    --font-size-h2: 50px;
+    --font-size-h3: 40px;
+    --font-size-h4: 35px;
+    --font-size-h5: 30px;
+    --font-size-h6: 25px;
+    --font-size-p: 18px;
+    --font-size-list: 18px;
+    --font-size-quotes: 20px;
+}
