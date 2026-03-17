@@ -1,0 +1,18 @@
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.logo_img {
+    width: 36.58px;
+    height: 53.72px;
+}
+.logo_text {
+    color: var(--dark-teal-color);
+    font-family: "Roboto";
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 0%;
+    text-align: left;
+}

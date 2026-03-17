@@ -1,5 +1,6 @@
 :root {
     /* colors */
+    --white-color: rgb(255, 255, 255);
     --dark-teal-color: rgba(39, 76, 91, 1);
     --aquamarine: rgba(126, 182, 147, 1);
     --yellow: rgba(239, 211, 114, 1);
@@ -7,6 +8,8 @@
     --color-white-smoke: rgba(249, 248, 248, 1); /* дуже світлий, майже білий */
     --color-mint-cream: rgba(239, 246, 241, 1);  /* м’який зелений / світлий м’ятний */
     --color-slate-gray: rgba(82, 92, 96, 1);     /* темний сіро-синій / сланцевий */
+    --color-hover-dark:rgb(51, 98, 117);
+    --color-hover-green:rgb(113, 163, 131);
 
     /* font size */
     --font-size-h1: 70px;
@@ -16,6 +19,6 @@
     --font-size-h5: 30px;
     --font-size-h6: 25px;
     --font-size-p: 18px;
-    --font-size-list: 18px;
+    --font-size-list: 20px;
     --font-size-quotes: 20px;
 }

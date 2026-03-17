@@ -3,8 +3,16 @@
 @import url("components/header.css");
 @import url("components/logo.css");
 @import url("components/nav.css");
+@import url("components/nav_mob.css");
+@import url("components/search.css");
+@import url("components/cart_icon.css");
+@import url("components/burger.css");
 
 .container {
     max-width: 1400px;
     margin: 0 auto;
+}
+.dfr {
+    display: flex;
+    flex-direction: row;
 }

@@ -1,0 +1,28 @@
+.nav {
+    flex-grow: 2;
+}
+.nav_list {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+.nav_list_item {
+    color: var(--dark-teal-color);
+    font-family: "Roboto";
+    font-size: var(--font-size-list);
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: left;
+    transition: 0.3s;
+}
+.nav_list_item:hover {
+    color: var(--color-hover-dark);
+    scale: 1.05;
+}
+
+@media (max-width: 480px) {
+    .nav {
+        display: none;
+    }
+}
