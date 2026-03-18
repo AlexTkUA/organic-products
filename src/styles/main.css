@@ -7,6 +7,16 @@
 @import url("components/search.css");
 @import url("components/cart_icon.css");
 @import url("components/burger.css");
+@import url("components/hero.css");
+@import url("components/italicSuperTitle.css");
+@import url("components/h1.css");
+@import url("components/button.css");
+@import url("components/offer.css");
+@import url("components/h3.css");
+@import url("components/aboutUs.css");
+@import url("components/title.css");
+@import url("components/paragraph.css");
+@import url("components/iconBlock.css");
 
 .container {
     max-width: 1400px;
@@ -15,4 +25,7 @@
 .dfr {
     display: flex;
     flex-direction: row;
+}
+.text-white {
+    color: rgba(255, 255, 255, 1);
 }

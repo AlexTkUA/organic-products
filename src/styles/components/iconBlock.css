@@ -1,0 +1,42 @@
+.iconBlock {
+    display: flex;
+    gap: 19px;
+}
+.iconBlock_icon {
+    width: 101px;
+    height: 101px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 1); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 19px;
+}
+.iconBlock_icon_wrapper {
+    width: 46px;
+    height: 46px;
+}
+.iconBlock_text {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.iconBlock_text_title {
+    color: var(--dark-teal-color);
+    font-family: "Roboto";
+    font-size: var(--font-size-h6);
+    font-weight: 800;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.iconBlock_text_paragraph {
+    color: var(--color-slate-gray);
+    font-family: "Open Sans";
+    font-size: var(--font-size-p);
+    font-weight: 400;
+    line-height: 165.4%;
+    letter-spacing: 0%;
+    text-align: left;
+}

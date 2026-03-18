@@ -10,6 +10,7 @@
     --color-slate-gray: rgba(82, 92, 96, 1);     /* темний сіро-синій / сланцевий */
     --color-hover-dark:rgb(51, 98, 117);
     --color-hover-green:rgb(113, 163, 131);
+    --color-hover-yellow:rgb(199, 177, 95);
 
     /* font size */
     --font-size-h1: 70px;

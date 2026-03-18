@@ -1,0 +1,16 @@
+.italicSuperTitle {
+    color: var(--aquamarine);
+    font-family: "Yellowtail";
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 49px;
+    letter-spacing: 0%;
+    text-align: left;
+    z-index: 2;
+}
+.italicSuperTitle-mb8 {
+    margin-bottom: 8px;
+}
+.italicSuperTitle-white {
+    color:white;
+}

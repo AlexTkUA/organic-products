@@ -1,0 +1,16 @@
+.h3 {
+    color: var(--dark-teal-color);
+    font-family: "Roboto";
+    font-size: var(--font-size-h3);
+    font-weight: 800;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: left;
+    z-index: 2;
+}
+.h3-white {
+    color:white;
+}
+.h3-mw270 {
+    max-width:270px;
+}
