@@ -17,15 +17,38 @@
 @import url("components/title.css");
 @import url("components/paragraph.css");
 @import url("components/iconBlock.css");
+@import url("components/shop.css");
+@import url("components/starsBlock.css");
+@import url("components/product-card.css");
+@import url("components/loader.css");
+@import url("components/testimonialAndCounter.css");
+@import url("components/slider.css");
 
 .container {
     max-width: 1400px;
     margin: 0 auto;
 }
+/* .dfc {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+} */
 .dfr {
     display: flex;
     flex-direction: row;
 }
+.text-center {
+    text-align: center;
+}
 .text-white {
     color: rgba(255, 255, 255, 1);
+}
+.m0a {
+    margin: 0 auto;
+}
+.mb25 {
+    margin-bottom: 25px;
+}
+.mb50 {
+    margin-bottom: 50px;
 }

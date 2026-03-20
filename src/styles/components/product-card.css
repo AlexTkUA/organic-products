@@ -1,0 +1,77 @@
+.product-card {
+    display: flex;
+    flex-direction: column;
+    width: 335px;
+    min-height: 483px;
+    position: relative;
+    border-radius: 30px;
+    padding: 30px 30px 17px 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: 0.4s;
+}
+.product-card:hover {
+    scale: 1.05;
+}
+.product-card_category {
+    align-self: flex-start;
+    padding: 5px 12px;
+    display: block;
+    background-color: var(--dark-teal-color);
+    color: rgba(255, 255, 255, 1);
+    font-family: "Open Sans";
+    font-size: 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.product-card_photo {
+    height: 324px;
+    overflow: hidden;
+}
+.product-card_photo img {
+    height: 100%;
+    object-fit: cover;
+}
+.product-card_name {
+    color: var(--dark-teal-color);
+    font-family: "Roboto";
+    font-size: var(--font-size-list);
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+.product-card_name::after {
+    content: "";
+    display: block;
+    width: 100%;
+    border: 1px solid rgba(222, 221, 221, 0.54);
+    margin-top: 13px;
+    margin-bottom: 7px;
+}
+.product-card_lowerBlock {
+    display: flex;
+    justify-content: space-between;
+}
+.product-card_lowerBlock_price_previous {
+    color: rgba(184, 184, 184, 1);
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-decoration: line-through;
+    margin-right: 7px;
+}
+.product-card_lowerBlock_price_current {
+    color: var(--dark-teal-color);
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: center;
+}

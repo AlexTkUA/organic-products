@@ -1,0 +1,29 @@
+.testimonialAndCounter {
+    position: relative;
+    max-width: 1920px;
+    margin: 0 auto;
+    min-height: 720px;
+}
+.testimonialAndCounter_left-bg {
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    overflow: hidden;
+}
+.testimonialAndCounter_right-bg {
+    height: 100%;
+
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    overflow: hidden;
+}
+.testimonialAndCounter-container {
+    padding: 164px 10px;
+}
+.testimonialAndCounter_testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}

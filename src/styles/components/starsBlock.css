@@ -1,0 +1,8 @@
+.starsBlock {
+    display: flex;
+    gap: 1px;
+}
+.starsBlock_img {
+    width: 15px;
+    height: 15px;
+}

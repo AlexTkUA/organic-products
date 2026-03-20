@@ -1,0 +1,30 @@
+.shop {
+    padding: 70px 10px 200px 10px;
+}
+.shop-container {
+    /* display: flex;
+    flex-direction: column; */
+}
+.shop_titleBlock {
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    margin-bottom: 40px;
+}
+.shop_titleBlock_title {
+    color: var(--dark-teal-color);
+    font-family: "Roboto";
+    font-size: var(--font-size-h2);
+    font-weight: 800;
+    line-height: 60px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+.shop_list {
+    display: flex;
+    min-height: 50vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 120px;
+}

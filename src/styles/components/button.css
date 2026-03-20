@@ -22,6 +22,9 @@
   letter-spacing: 0%;
   text-align: left;
 }
+.bmw {
+  max-width: 220px;
+}
 .button_icon {
   width: 19px;
   height: 19px;
