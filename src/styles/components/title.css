@@ -11,3 +11,14 @@
 .title-mb14 {
     margin-bottom: 14px;
 }
+.title-text-center {
+
+}
+@media (max-width: 480px) {
+    .title-text-center {
+        text-align: center;
+    }
+    .title-mb15 {
+        margin-bottom: 15px;
+    }
+}

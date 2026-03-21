@@ -52,5 +52,42 @@
     "rating": 5,
     "isDiscount": true,
     "scr": "product06.png"
+  },
+
+  {
+    "category": "Vegetable",
+    "name": "Mung Bean",
+    "price": "$12.00",
+    "discountPrice": "$10.00",
+    "rating": 4,
+    "isDiscount": true,
+    "scr": "product07.png"
+  },
+  {
+    "category": "Vegetable",
+    "name": "Brown Hazelnut",
+    "price": "$26.00",
+    "discountPrice": "$20.00",
+    "rating": 5,
+    "isDiscount": true,
+    "scr": "product08.png"
+  },
+  {
+    "category": "Vegetable",
+    "name": "Onion",
+    "price": "$8.00",
+    "discountPrice": "$6.00",
+    "rating": 4,
+    "isDiscount": true,
+    "scr": "product09.png"
+  },
+  {
+    "category": "Vegetable",
+    "name": "Cabbage",
+    "price": "$9.00",
+    "discountPrice": "$7.00",
+    "rating": 4,
+    "isDiscount": true,
+    "scr": "product010.png"
   }
 ]

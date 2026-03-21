@@ -1,0 +1,19 @@
+.titleWithParagraph_title {
+    color: var(--dark-teal-color);
+    font-family: "Roboto";
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 7px;
+}
+.titleWithParagraph_par {
+    color: var(--color-slate-gray);
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 165.4%;
+    letter-spacing: 0%;
+    text-align: left;
+}

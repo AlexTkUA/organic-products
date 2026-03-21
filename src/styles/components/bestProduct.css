@@ -1,0 +1,24 @@
+.bestProduct {
+    background-color: var(--dark-teal-color);
+    padding: 200px 10px;
+}
+
+.bestProduct_titleBtn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.bestProduct_wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+@media (max-width: 480px) {
+    .bestProduct_wrapper {
+        justify-content: center;
+    }
+    .bestProduct {
+        padding: 40px 10px
+    }
+}

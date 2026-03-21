@@ -23,6 +23,10 @@
 @import url("components/loader.css");
 @import url("components/testimonialAndCounter.css");
 @import url("components/slider.css");
+@import url("components/circle-counter.css");
+@import url("components/bestProduct.css");
+@import url("components/whoWeAre.css");
+@import url("components/titleWithParagraph.css");
 
 .container {
     max-width: 1400px;
@@ -48,6 +52,9 @@
 }
 .mb25 {
     margin-bottom: 25px;
+}
+.mb35 {
+    margin-bottom: 35px;
 }
 .mb50 {
     margin-bottom: 50px;
