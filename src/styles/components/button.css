@@ -35,6 +35,16 @@
 .btn-dark-color:hover {
   background-color: var(--color-hover-dark);
 }
+.btn-white {
+  border: 2px solid var(--dark-teal-color);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 1);
+  transition: 0.3s;
+}
+.btn-white:hover {
+  background: var(--color-white-smoke);
+
+}
 @media (max-width:480px) {
   .btnm0auto {
     margin: 0 auto;

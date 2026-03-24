@@ -4,6 +4,8 @@ import showMobMenu from "./components/burger.js";
 import renderList from "./components/productList.js";
 import getData from "./components/getData.js";
 import { showLoader, hideLoader } from "./components/loader.js";
+import renderStats from "./components/statsCount.js";
+import renderNewsList from "./components/new-card.js";
 document.addEventListener("DOMContentLoaded", () => {
 
     document.body.insertAdjacentHTML("afterbegin", renderHeader());
@@ -21,4 +23,18 @@ getData("src/data/products.json", true, "[data-loader]").then(data => {
   vegetables = vegetables.slice(0,4);
   renderList(vegetables, ".bestProduct_wrapper")
 })
+/*===========================================*/
+
+/**=================Stats==================== */
+getData("src/data/stats.json").then(data => {
+  renderStats(data, ".testimonialAndCounter_counter_wrapper")
+})
+/*===========================================*/
+
+/**===============News block================== */
+console.log(document.querySelector(".news_wrapper"));
+getData("src/data/news.json").then(data => {
+  renderNewsList(data, ".news_wrapper")
+})
+/**=========================================== */
 })

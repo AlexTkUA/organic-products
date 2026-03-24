@@ -9,7 +9,11 @@ const getData = (url, isLoaderNeed, selectorLoader) => {
             throw new Error("Помилка");
         }
         return res.json();
-    }).finally(() => {
+    })
+    .catch((err) => {
+        console.error(err.message)
+    })
+    .finally(() => {
         hideLoader(selectorLoader);
     });
 }

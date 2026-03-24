@@ -1,0 +1,8 @@
+.gallery {
+    padding: 187px 0px;
+    background-color: var(--color-mint-cream);
+}
+.gallery_wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}

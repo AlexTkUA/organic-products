@@ -1,0 +1,39 @@
+{
+  "stats": [
+    {
+      "title": "Organic",
+      "value": 100,
+      "unit": "%"
+    },
+    {
+      "title": "Active Product",
+      "value": 285,
+      "unit": null
+    },
+    {
+      "title": "Organic Orchards",
+      "value": 350,
+      "unit": "+"
+    },
+    {
+      "title": "Years of Farming",
+      "value": 25,
+      "unit": "+"
+    },
+    {
+      "title": "Years of Farming",
+      "value": 25,
+      "unit": "+"
+    },
+    {
+      "title": "Years of Farming",
+      "value": 25,
+      "unit": "+"
+    },
+    {
+      "title": "Years of Farming",
+      "value": 25,
+      "unit": "+"
+    }
+  ]
+}

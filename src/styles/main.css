@@ -27,6 +27,9 @@
 @import url("components/bestProduct.css");
 @import url("components/whoWeAre.css");
 @import url("components/titleWithParagraph.css");
+@import url("components/gallery.css");
+@import url("components/news.css");
+@import url("components/new-card.css");
 
 .container {
     max-width: 1400px;
