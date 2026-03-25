@@ -9,7 +9,7 @@ const renderStats = (data, selectorPlaceholder, count = 4) => {
         count = data.stats.length;
     }
     data.stats.filter((item, index) => index < count)
-    .forEach((stat, index) => {
+    .forEach((stat) => {
         const {title, value, unit} = stat;
         let num = ``;
         if (unit === "%") {

@@ -34,7 +34,7 @@ getData("src/data/stats.json").then(data => {
 /**===============News block================== */
 console.log(document.querySelector(".news_wrapper"));
 getData("src/data/news.json").then(data => {
-  renderNewsList(data, ".news_wrapper")
+  renderNewsList(data, ".news_wrapper", 2)
 })
 /**=========================================== */
 })

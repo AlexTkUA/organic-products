@@ -5,28 +5,32 @@
       "title": "Fresh Organic Vegetables Arrived This Week",
       "author": "Emma Green",
       "createdAt": "2026-03-20T10:30:00Z",
-      "paragraph": "We are excited to announce a fresh delivery of organic vegetables from local farms. Our shelves are now stocked with tomatoes, cucumbers, carrots, and leafy greens grown without chemicals."
+      "paragraph": "We are excited to announce a fresh delivery of organic vegetables from local farms. Our shelves are now stocked with tomatoes, cucumbers, carrots, and leafy greens grown without chemicals.",
+      "photo":"photo07.png"
     },
     {
       "id": 2,
       "title": "Why Organic Fruits Are Better for Your Health",
       "author": "Liam Carter",
       "createdAt": "2026-03-18T14:15:00Z",
-      "paragraph": "Organic fruits are grown without synthetic pesticides and fertilizers, making them a healthier choice. They also often contain more nutrients and provide a richer, more natural taste."
+      "paragraph": "Organic fruits are grown without synthetic pesticides and fertilizers, making them a healthier choice. They also often contain more nutrients and provide a richer, more natural taste.",
+      "photo":"photo08.png"
     },
     {
       "id": 3,
       "title": "New Seasonal Discounts on Organic Products",
       "author": "Olivia Brown",
-      "createdAt": "2026-03-15T09:00:00Z",
-      "paragraph": "This season we are offering special discounts on selected organic products. Visit our store to enjoy fresh fruits and vegetables at better prices while maintaining a healthy lifestyle."
+      "createdAt": "2026-03-04T09:00:00Z",
+      "paragraph": "This season we are offering special discounts on selected organic products. Visit our store to enjoy fresh fruits and vegetables at better prices while maintaining a healthy lifestyle.",
+      "photo":"photo07.png"
     },
     {
       "id": 4,
       "title": "Supporting Local Organic Farmers",
       "author": "Noah Wilson",
       "createdAt": "2026-03-12T12:45:00Z",
-      "paragraph": "Our store proudly partners with local farmers who grow organic produce. By choosing our products, you support sustainable agriculture and help small farms thrive."
+      "paragraph": "Our store proudly partners with local farmers who grow organic produce. By choosing our products, you support sustainable agriculture and help small farms thrive.",
+      "photo":"photo08.png"
     }
   ]
 }
