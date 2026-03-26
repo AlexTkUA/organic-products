@@ -1,0 +1,9 @@
+.messenger {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background: rgba(239, 246, 241, 1);
+}

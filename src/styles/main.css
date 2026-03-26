@@ -30,6 +30,9 @@
 @import url("components/gallery.css");
 @import url("components/news.css");
 @import url("components/new-card.css");
+@import url("components/emailForm.css");
+@import url("components/footer.css");
+@import url("components/messenger.css");
 
 .container {
     max-width: 1400px;
@@ -53,6 +56,9 @@
 .m0a {
     margin: 0 auto;
 }
+.mb26 {
+    margin-bottom: 26px;
+}
 .mb25 {
     margin-bottom: 25px;
 }
@@ -61,4 +67,19 @@
 }
 .mb50 {
     margin-bottom: 50px;
+}
+.fs2 {
+    flex-shrink: 2;
+}
+.fs3 {
+    flex-shrink: 3;
+}
+.fg0 {
+    flex-grow: 0;
+}
+.fg1 {
+    flex-grow: 1;
+}
+.fg2 {
+    flex-grow: 2;
 }

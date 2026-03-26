@@ -9,6 +9,7 @@
 .news_titleBtn {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .news-title {
     max-width: 700px;
@@ -18,4 +19,15 @@
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
+}
+@media (max-width: 480px) {
+  .news_wrapper {
+    padding: 0px 15px;
+  }
+  .news {
+    padding: 30px 20px;
+  }
+  .news_titleBtn {
+
+  }
 }

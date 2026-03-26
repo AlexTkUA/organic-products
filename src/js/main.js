@@ -1,5 +1,7 @@
-"use strict"
+"use strict";
 import renderHeader from "./components/header.js";
+import renderFooter from "./components/footer.js";
+import renderEmailForm from "./components/renderEmailForm.js";
 import showMobMenu from "./components/burger.js";
 import renderList from "./components/productList.js";
 import getData from "./components/getData.js";
@@ -7,34 +9,45 @@ import { showLoader, hideLoader } from "./components/loader.js";
 import renderStats from "./components/statsCount.js";
 import renderNewsList from "./components/new-card.js";
 document.addEventListener("DOMContentLoaded", () => {
+  /**=============Render header================== */
+  document.body.insertAdjacentHTML("afterbegin", renderHeader());
+  /*===========================================*/
 
-    document.body.insertAdjacentHTML("afterbegin", renderHeader());
+  /**=============Render footer================== */
+  document.querySelector(".main").insertAdjacentHTML("afterend", renderFooter());
+  /*===========================================*/
 
-    /**============Burger Action ==============*/
-    const burgerElement = document.querySelector(".burger");
-    const mobMenuElement = document.querySelector(".nav_mob");
-    showMobMenu(burgerElement, mobMenuElement)
-    /*===========================================*/
-    
-    /**=============Product list on main page=========== */
-getData("src/data/products.json", true, "[data-loader]").then(data => {
-  renderList(data, ".shop_list")
-  let vegetables = data.filter(item => item.category === "Vegetable");
-  vegetables = vegetables.slice(0,4);
-  renderList(vegetables, ".bestProduct_wrapper")
-})
+    /**=============Render footer================== */
+  document.querySelector(".main").insertAdjacentHTML("beforeend", renderEmailForm());
 /*===========================================*/
+  
 
-/**=================Stats==================== */
-getData("src/data/stats.json").then(data => {
-  renderStats(data, ".testimonialAndCounter_counter_wrapper")
-})
-/*===========================================*/
 
-/**===============News block================== */
-console.log(document.querySelector(".news_wrapper"));
-getData("src/data/news.json").then(data => {
-  renderNewsList(data, ".news_wrapper", 2)
-})
-/**=========================================== */
-})
+  /**============Burger Action ==============*/
+  const burgerElement = document.querySelector(".burger");
+  const mobMenuElement = document.querySelector(".nav_mob");
+  showMobMenu(burgerElement, mobMenuElement);
+  /*===========================================*/
+
+  /**=============Product list on main page=========== */
+  getData("src/data/products.json", true, "[data-loader]").then((data) => {
+    renderList(data, ".shop_list");
+    let vegetables = data.filter((item) => item.category === "Vegetable");
+    vegetables = vegetables.slice(0, 4);
+    renderList(vegetables, ".bestProduct_wrapper");
+  });
+  /*===========================================*/
+
+  /**=================Stats==================== */
+  getData("src/data/stats.json").then((data) => {
+    renderStats(data, ".testimonialAndCounter_counter_wrapper");
+  });
+  /*===========================================*/
+
+  /**===============News block================== */
+  console.log(document.querySelector(".news_wrapper"));
+  getData("src/data/news.json").then((data) => {
+    renderNewsList(data, ".news_wrapper", 2);
+  });
+  /**=========================================== */
+});

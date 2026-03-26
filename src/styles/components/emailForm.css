@@ -1,0 +1,87 @@
+.emailForm {
+    padding: 50px 10px;
+}
+.emailForm_block {
+    width: 100%;
+    background-image: url("../../assets/img/bg-form.png");
+    background-position: left;
+    background-repeat: repeat;
+    background-size: cover;
+    border-radius: 30px;
+}
+.emailForm_block_wrapper {
+    padding: 105px 71px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-wrap: wrap;
+}
+.emailForm_title {
+    color: rgba(255, 255, 255, 1);
+    max-width: 357px;;
+    font-family: "Roboto";
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 60px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.emailForm_form {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+.emailForm_form_emailInput {
+    min-width: 349px;
+    padding: 28px 0px 31px 21px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 1);
+    color: rgba(171, 171, 171, 1);
+    font-family: "Roboto";
+    font-style: Italic;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0%;
+    text-align: left;
+    border: none;
+}
+.emailForm_form_btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 28px 47px 29px 47px;
+    border-radius: 16px;
+    background: var(--dark-teal-color);
+    color: rgba(255, 255, 255, 1);
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.emailForm_form_btn:hover {
+    background-color: var(--color-hover-dark);
+}
+@media (max-width: 480px) {
+    .emailForm_form_emailInput {
+        min-width: auto;
+    }
+    .emailForm_form {
+        justify-content: center;
+    }
+    .emailForm_title {
+        text-align: center;
+    }
+    .emailForm_block_wrapper {
+        gap: 20px;
+    }
+    .emailForm_block {
+        background-position:center;
+    }
+}

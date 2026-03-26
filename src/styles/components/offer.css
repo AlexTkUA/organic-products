@@ -42,7 +42,7 @@
     background: rgba(235, 240, 244, 1);
 }
 .offer_item_img-w120 {
-    width: 120%;
+    width: 100%;
 }
 @media (max-width:480px) {
     .offer {
