@@ -2,9 +2,9 @@
 import { getFormatMonth, getMonthName } from "./timeDB.js";
 const renderNewsList = (data, selectPlaceholder, count = 2) => {
   const place = document.querySelector(selectPlaceholder);
-  if (!place) {
-    throw new Error("place in renderNewsList is not defined");
-  }
+  // if (!place) {
+  //   return
+  // }
   let html = ``;
   const arrNews = data.news.slice(0, count);
   arrNews

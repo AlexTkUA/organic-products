@@ -1,5 +1,8 @@
 "use strict"
+import { correctPath } from "./url.js";
 const renderFooter  = () => {
+  const startPath = correctPath(true);
+  console.log(startPath);
     return `<footer class="footer">
       <div class="container footer-container">
         <div class="footer_block contact-order">
@@ -41,7 +44,7 @@ const renderFooter  = () => {
           <div class="footer_block_middle">
             <a href="index.html" class="logo mb26">
               <div class="logo_img">
-                <img src="src/assets/logo/logo.svg" alt="logo" />
+                <img src="${startPath}assets/logo/logo.svg" alt="logo" />
               </div>
               <span class="logo_text">Organick</span>
             </a>
@@ -52,15 +55,15 @@ const renderFooter  = () => {
             <div class="footer_block_messages">
               <a href="#" class="messenger"
                 ><div class="messenger_icon">
-                  <img src="src/assets/logo/insta.svg" alt="" /></div
+                  <img src="${startPath}assets/logo/insta.svg" alt="" /></div
               ></a>
               <a href="#" class="messenger"
                 ><div class="messenger_icon">
-                  <img src="src/assets/logo/fb.svg" alt="" /></div
+                  <img src="${startPath}assets/logo/fb.svg" alt="" /></div
               ></a>
               <a href="#" class="messenger"
                 ><div class="messenger_icon">
-                  <img src="src/assets/logo/twiter.svg" alt="" /></div
+                  <img src="${startPath}assets/logo/twiter.svg" alt="" /></div
               ></a>
             </div>
           </div>

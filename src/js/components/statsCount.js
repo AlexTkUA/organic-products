@@ -1,9 +1,9 @@
 "use strict";
 const renderStats = (data, selectorPlaceholder, count = 4) => {
     const wrapper = document.querySelector(selectorPlaceholder);
-    if (!wrapper) {
-        throw new Error("wrapper in renderStats is not defined");
-    }
+    // if (!wrapper) {
+    //     return;
+    // }
     let html = ``;
     if (data.stats.length < count) {
         count = data.stats.length;

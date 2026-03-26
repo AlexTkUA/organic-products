@@ -1,9 +1,9 @@
 "use strict"
 const renderList = (products, placeHolder) => {
     const placeHolderElement = document.querySelector(placeHolder);
-    if (!placeHolderElement) {
-        return
-    }
+    // if (!placeHolderElement) {
+    //     return
+    // }
     let html = ``;
     products.forEach(element => {
         const {category, name, price, discountPrice, rating, isDiscount, scr} = element;

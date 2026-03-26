@@ -1,13 +1,10 @@
+"use strict";
+import { correctPath } from "./url.js";
 const renderHeader = () => {
-  let startUrl = ``;
-  if (window.location.pathname.includes("pages")) {
-    startUrl = "../../"
-  } else {
-    startUrl = "src/"
-  }
+  const startUrl = correctPath(true);
     const html = `<header class = "header">
         <div class="container header-container">
-          <a href="index.html" class = "logo">
+          <a href="${startUrl === "../../" ? startUrl + "../" : startUrl}index.html" class = "logo">
             <div class = "logo_img">
               <img src="${startUrl}assets/logo/logo.svg" alt="logo">
             </div>
