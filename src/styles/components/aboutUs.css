@@ -16,9 +16,8 @@
   max-width: 911px;
   align-self: flex-start;
 }
-.aboutUs_img img {
+.aboutUs_img_inner  {
   position: relative;
-  top: -100px;
 }
 .aboutUs_info {
   position: relative;
@@ -35,9 +34,8 @@
   margin-bottom: 48px;
 }
 @media (max-width: 1199.98px) {
-  .aboutUs_img img {
+  .aboutUs_img_inner {
     position: relative;
-    top: -100px;
     left: -200px;
   }
   .aboutUs_info {
@@ -65,11 +63,11 @@
     }
 
   .aboutUs_img img {
-    position: static;
+    left: 0px;
+    position: relative;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    scale: 3;
+    object-fit: contain;
   }
   .aboutUs_info {
     margin-left:0;

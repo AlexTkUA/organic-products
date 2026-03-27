@@ -1,0 +1,42 @@
+.best-side-card {
+  width: 257px;
+  height: 335px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:13px;
+}
+.best-side-card_rounded {
+  width: 95px;
+  height: 95px;
+  border-radius: 18px;
+  background: rgba(249, 248, 248, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.best-side-card_rounded_icon {
+  width: 42px;
+  height: 42px;
+}
+.best-side-card_title {
+    color: var(--dark-teal-color);
+    font-family: "Roboto";
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.best-side-card_text {
+    color: var(--color-slate-gray);
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 165.4%;
+    letter-spacing: 0%;
+    text-align: center;
+}

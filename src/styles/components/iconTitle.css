@@ -1,0 +1,18 @@
+.iconTitle {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.iconTitle_img {
+  width: 46px;
+  height: 46px;
+}
+.iconTitle_title {
+  color: var(--dark-teal-color);
+  font-family: "Roboto";
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+}

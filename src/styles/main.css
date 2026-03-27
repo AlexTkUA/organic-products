@@ -34,10 +34,20 @@
 @import url("components/footer.css");
 @import url("components/messenger.css");
 @import url("components/banner.css");
+@import url("components/iconTitle.css");
+@import url("components/title-block01.css");
+@import url("components/chooseUs.css");
+@import url("components/best-side-card.css");
 
 .container {
     max-width: 1400px;
     margin: 0 auto;
+}
+.top0 {
+    top: 0px;
+}
+.bc-white {
+    background-color: #fff;
 }
 .dfc {
     display: flex;
@@ -57,6 +67,9 @@
 .m0a {
     margin: 0 auto;
 }
+.mb12 {
+    margin-bottom: 12px;
+}
 .mb26 {
     margin-bottom: 26px;
 }
@@ -68,6 +81,12 @@
 }
 .mb50 {
     margin-bottom: 50px;
+}
+.mbl25 {
+    margin-left: 25px;
+}
+.ml60 {
+    margin-left: 60px;
 }
 .fs2 {
     flex-shrink: 2;

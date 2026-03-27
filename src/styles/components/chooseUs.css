@@ -1,0 +1,25 @@
+.chooseUs {
+    background-color: rgba(249, 248, 248, 1);;
+
+}
+.chooseUs-container {
+    padding: 90px 10px;
+}
+.chooseUs_upperBlock {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+.chooseUs_upperBlock_info {
+    max-width: 45%;
+}
+.choose_upperBlock_img {
+    max-width: 45%;
+}
+.chooseUs_lowerBlock_wrapper {
+    display: flex;
+    gap:30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
