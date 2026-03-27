@@ -33,6 +33,7 @@
 @import url("components/emailForm.css");
 @import url("components/footer.css");
 @import url("components/messenger.css");
+@import url("components/banner.css");
 
 .container {
     max-width: 1400px;

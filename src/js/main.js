@@ -9,6 +9,7 @@ import getData from "./components/getData.js";
 import { showLoader, hideLoader } from "./components/loader.js";
 import renderStats from "./components/statsCount.js";
 import renderNewsList from "./components/new-card.js";
+import renderBanner from "./components/renderBanner.js";
 document.addEventListener("DOMContentLoaded", () => {
   console.log("object");
   /**=============Render header================== */
@@ -61,6 +62,13 @@ document.addEventListener("DOMContentLoaded", () => {
     getData(`${correctPathToDate(true)}data/news.json`).then((data) => {
       renderNewsList(data, ".news_wrapper", 2);
     });
+  }
+  /**=========================================== */
+
+  /**===============Banner====================== */
+  if (document.querySelector(".banner")) {
+  const banner = renderBanner();
+  banner(".banner")
   }
   /**=========================================== */
 });

@@ -1,0 +1,16 @@
+.banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.banner-conatiner {
+  padding: 175px 10px;
+}
+.banner_wrapper {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.bannerAboutUs {
+    background-image: url("../../assets/img/banner01.png");
+}
