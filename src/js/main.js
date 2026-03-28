@@ -10,6 +10,7 @@ import { showLoader, hideLoader } from "./components/loader.js";
 import renderStats from "./components/statsCount.js";
 import renderNewsList from "./components/new-card.js";
 import renderBanner from "./components/renderBanner.js";
+import renderTeamsCards from "./components/renderTeams.js";
 document.addEventListener("DOMContentLoaded", () => {
   console.log("object");
   /**=============Render header================== */
@@ -36,16 +37,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /**=============Product list on main page=========== */
   if (document.querySelector(".bestProduct_wrapper"))
-  getData(
-    `${correctPathToDate(true)}data/products.json`,
-    true,
-    "[data-loader]",
-  ).then((data) => {
-    renderList(data, ".shop_list");
-    let vegetables = data.filter((item) => item.category === "Vegetable");
-    vegetables = vegetables.slice(0, 4);
-    renderList(vegetables, ".bestProduct_wrapper");
-  });
+    getData(
+      `${correctPathToDate(true)}data/products.json`,
+      true,
+      "[data-loader]",
+    ).then((data) => {
+      renderList(data, ".shop_list");
+      let vegetables = data.filter((item) => item.category === "Vegetable");
+      vegetables = vegetables.slice(0, 4);
+      renderList(vegetables, ".bestProduct_wrapper");
+    });
   /*===========================================*/
 
   /**=================Stats==================== */
@@ -67,8 +68,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /**===============Banner====================== */
   if (document.querySelector(".banner")) {
-  const banner = renderBanner();
-  banner(".banner")
+    const banner = renderBanner();
+    banner(".banner");
+  }
+  /**=========================================== */
+
+  /**==============Team list==================== */
+  if (document.querySelector(".teams_wrapper")) {
+    getData(`${correctPath(true)}data/team.json`)
+    .then (data => {
+      renderTeamsCards(data, ".teams_wrapper")
+    })
   }
   /**=========================================== */
 });

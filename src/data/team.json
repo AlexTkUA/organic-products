@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "personName": "Giovani Bacardo",
+    "profession": "Farmer",
+    "photo": "team01.jpg",
+    "messengers": [
+      [true, "insta.svg", "#"],
+      [true, "fb.svg", "#"],
+      [true, "twiter.svg", "#"]
+    ]
+  },
+  {
+    "id": 2,
+    "personName": "Anna Smith",
+    "profession": "Designer",
+    "photo": "team02.jpg",
+    "messengers": [
+      [true, "insta.svg", "#"],
+      [false, "fb.svg", "#"],
+      [true, "twiter.svg", "#"]
+    ]
+  },
+  {
+    "id": 3,
+    "personName": "John Carter",
+    "profession": "Developer",
+    "photo": "team03.jpg",
+    "messengers": [
+      [true, "insta.svg", "#"],
+      [true, "fb.svg", "#"],
+      [false, "twiter.svg", "#"]
+    ]
+  }
+]

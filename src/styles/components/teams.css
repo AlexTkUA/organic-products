@@ -1,0 +1,13 @@
+.teams {
+
+}
+.teams-container {
+    padding: 90px 10px;
+}
+.teams_wrapper {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}

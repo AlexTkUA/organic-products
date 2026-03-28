@@ -38,6 +38,8 @@
 @import url("components/title-block01.css");
 @import url("components/chooseUs.css");
 @import url("components/best-side-card.css");
+@import url("components/teams.css");
+@import url("components/team-card.css");
 
 .container {
     max-width: 1400px;
@@ -63,6 +65,9 @@
 }
 .text-white {
     color: rgba(255, 255, 255, 1);
+}
+.mw850 {
+    max-width: 850px;
 }
 .m0a {
     margin: 0 auto;
