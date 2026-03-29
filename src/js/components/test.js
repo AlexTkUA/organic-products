@@ -1,0 +1,23 @@
+const arr = [
+  "Apple",
+  "Banana",
+  "Orange",
+  "Milk",
+  "Bread",
+  "Eggs",
+  "Cheese",
+  "Chicken",
+  "Beef",
+  "Rice",
+  "Pasta",
+  "Tomato",
+  "Potato",
+  "Onion",
+  "Carrot",
+  "Cucumber",
+  "Yogurt",
+  "Butter",
+  "Fish",
+  "Sugar",
+];
+

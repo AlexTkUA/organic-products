@@ -23,3 +23,12 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+@media (max-width: 991.98px) {
+    .choose_upperBlock_img {
+        display: none;
+    }
+    .chooseUs_upperBlock_info {
+        max-width: 100%;
+        padding: 0px 30px;
+    }
+}

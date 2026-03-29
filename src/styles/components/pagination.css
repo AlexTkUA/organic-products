@@ -1,0 +1,21 @@
+.pagination {
+
+}
+.pagination_list {
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+.pagination_list_item {
+    color: var(--dark-teal-color);
+    font-family: "Roboto";
+    font-size: var(--font-size-list);
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0%;
+    cursor: pointer;
+}
+.pag-active {
+    color: var(--aquamarine);
+    font-weight: 800;
+}

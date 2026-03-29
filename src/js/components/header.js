@@ -16,7 +16,7 @@ const renderHeader = () => {
           <nav class = "nav">
             <ul class ="nav_list">
               <li class = "nav_list_item"><a href="${startUrl}pages/aboutUs/index.html">About</a></li>
-              <li class = "nav_list_item"><a href="#">Shop</a></li>
+              <li class = "nav_list_item"><a href="${startUrl}pages/shop/index.html">Shop</a></li>
               <li class = "nav_list_item"><a href="#">Projects</a></li>
               <li class = "nav_list_item"><a href="#">News</a></li>
             </ul>
@@ -24,7 +24,7 @@ const renderHeader = () => {
           <nav class = "nav_mob">
             <ul class ="nav_mob_list">
               <li class = "nav_mob_list_item"><a href="${startUrl}pages/aboutUs/index.html">About</a></li>
-              <li class = "nav_mob_list_item"><a href="#">Shop</a></li>
+              <li class = "nav_mob_list_item"><a href="${startUrl}pages/shop/index.html">Shop</a></li>
               <li class = "nav_mob_list_item"><a href="#">Projects</a></li>
               <li class = "nav_mob_list_item"><a href="#">News</a></li>
             </ul>

@@ -8,7 +8,7 @@ const renderBanner = () => {
     },
     shop: {
       title: "Shop",
-      bannerClass: '',
+      bannerClass: 'bannerShop',
     },
   };
     return (selector) => {

@@ -40,6 +40,7 @@
 @import url("components/best-side-card.css");
 @import url("components/teams.css");
 @import url("components/team-card.css");
+@import url("components/pagination.css");
 
 .container {
     max-width: 1400px;

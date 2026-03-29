@@ -1,5 +1,6 @@
 [
   {
+    "id" : 1,
     "category": "Vegetable",
     "name": "Calabrese Broccoli",
     "price": "$20.00",
@@ -9,6 +10,7 @@
     "scr": "product01.png"
   },
   {
+    "id" : 2,
     "category": "Fresh",
     "name": "Fresh Banana Fruites",
     "price": "$18.00",
@@ -18,6 +20,7 @@
     "scr": "product02.png"
   },
   {
+    "id" : 3,
     "category": "Millets",
     "name": "White Nuts",
     "price": "$15.00",
@@ -27,6 +30,7 @@
     "scr": "product03.png"
   },
   {
+    "id" : 4,
     "category": "Vegetable",
     "name": "Vegan Red Tomato",
     "price": "$17.00",
@@ -36,6 +40,7 @@
     "scr": "product04.png"
   },
   {
+    "id" : 5,
     "category": "Health",
     "name": "Mung Bean",
     "price": "$11.00",
@@ -45,6 +50,7 @@
     "scr": "product05.png"
   },
   {
+    "id" : 6,
     "category": "Nuts",
     "name": "Brown Hazelnut",
     "price": "$25.00",
@@ -55,6 +61,7 @@
   },
 
   {
+    "id" : 7,
     "category": "Vegetable",
     "name": "Mung Bean",
     "price": "$12.00",
@@ -64,6 +71,7 @@
     "scr": "product07.png"
   },
   {
+    "id" : 8,
     "category": "Vegetable",
     "name": "Brown Hazelnut",
     "price": "$26.00",
@@ -73,6 +81,7 @@
     "scr": "product08.png"
   },
   {
+    "id" : 9,
     "category": "Vegetable",
     "name": "Onion",
     "price": "$8.00",
@@ -82,6 +91,7 @@
     "scr": "product09.png"
   },
   {
+    "id" : 10,
     "category": "Vegetable",
     "name": "Cabbage",
     "price": "$9.00",
