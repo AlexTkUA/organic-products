@@ -1,8 +1,11 @@
 "use strict";
 import { correctPath, correctPathToDate } from "./url.js";
 const renderList = (products, placeHolder, countOnPage) => {
+  if (products.length === 0) {
+    return;
+  }
+  
   let currentPage = 1;
-
   const displayList = () => {
     const placeHolderElement = document.querySelector(placeHolder);
     placeHolderElement.innerHTML = ``;
@@ -51,6 +54,10 @@ const renderList = (products, placeHolder, countOnPage) => {
   };
   const displayPagination = (dataArr) => {
     const pagEl = document.querySelector(".pagination");
+    if (!pagEl) {
+      return
+    }
+    pagEl.innerHTML = ``;
     if (!pagEl) {
       return;
     }

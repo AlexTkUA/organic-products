@@ -1,0 +1,22 @@
+[
+    {
+        "nameCategory": "Spicy",
+        "title": "Spicy",
+        "photo": "spicy.png"
+    },
+    {
+        "nameCategory": "Nuts",
+        "title": "Nuts & Feesd",
+        "photo": "nuts-feesd.png"
+    },
+    {
+        "nameCategory": "Fruits",
+        "title": "Fruits",
+        "photo": "fruits.png"
+    },
+    {
+        "nameCategory": "Vegetable",
+        "title": "Vegetable",
+        "photo": "product01.png"
+    }
+]

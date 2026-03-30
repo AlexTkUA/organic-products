@@ -4,13 +4,15 @@ import renderFooter from "./components/footer.js";
 import renderEmailForm from "./components/renderEmailForm.js";
 import { correctPath, correctPathToDate } from "./components/url.js";
 import showMobMenu from "./components/burger.js";
-import {renderList} from "./components/productList.js";
+import { renderList } from "./components/productList.js";
 import getData from "./components/getData.js";
 import { showLoader, hideLoader } from "./components/loader.js";
 import renderStats from "./components/statsCount.js";
 import renderNewsList from "./components/new-card.js";
 import renderBanner from "./components/renderBanner.js";
 import renderTeamsCards from "./components/renderTeams.js";
+import renderCategoryList from "./components/categories.js";
+import productFilterCategory from "./components/productFilter.js";
 document.addEventListener("DOMContentLoaded", () => {
   console.log("object");
   /**=============Render header================== */
@@ -43,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "[data-loader]",
     ).then((data) => {
       renderList(data, ".shop_list", 10);
-      
+
       let vegetables = data.filter((item) => item.category === "Vegetable");
       vegetables = vegetables.slice(0, 4);
       renderList(vegetables, ".bestProduct_wrapper", 4);
@@ -76,19 +78,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /**==============Team list==================== */
   if (document.querySelector(".teams_wrapper")) {
-    getData(`${correctPath(true)}data/team.json`)
-    .then (data => {
-      renderTeamsCards(data, ".teams_wrapper")
-    })
+    getData(`${correctPath(true)}data/team.json`).then((data) => {
+      renderTeamsCards(data, ".teams_wrapper");
+    });
   }
   /**=========================================== */
 
   /**=================Shop on page============== */
+  //Категорії товарів
+  if (document.querySelector(".shop_category-list")) {
+    getData(`${correctPathToDate(true)}data/categories.json`).then((data) => {
+      renderCategoryList(data, ".shop_category-list");
+    });
+  }
+
+  //Товари
   if (document.querySelector(".shop_list-page")) {
-    getData(`${correctPathToDate(true)}data/products.json`)
-    .then(data => {
-      renderList(data, ".shop_list-page", 8)
-    })
+    getData(`${correctPathToDate(true)}data/products.json`).then((data) => {
+      renderList(data, ".shop_list-page", 8);
+      productFilterCategory(data, ".shop_list-page");
+    });
   }
   /**=========================================== */
 });
