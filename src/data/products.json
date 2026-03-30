@@ -59,7 +59,6 @@
     "isDiscount": true,
     "scr": "product06.png"
   },
-
   {
     "id" : 7,
     "category": "Vegetable",
@@ -99,5 +98,145 @@
     "rating": 4,
     "isDiscount": true,
     "scr": "product010.png"
+  },
+  {
+    "id" : 11,
+    "category": "Fruits",
+    "name": "Apple",
+    "price": "$5.00",
+    "discountPrice": "$3.00",
+    "rating": 4,
+    "isDiscount": false,
+    "scr": "apple.png"
+  },
+  {
+    "id" : 12,
+    "category": "Fruits",
+    "name": "Bananas",
+    "price": "$8.00",
+    "discountPrice": "$7.00",
+    "rating": 5,
+    "isDiscount": true,
+    "scr": "bananas.png"
+  },
+  {
+    "id" : 13,
+    "category": "Fruits",
+    "name": "Blueberry",
+    "price": "$12.00",
+    "discountPrice": "$11.00",
+    "rating": 5,
+    "isDiscount": true,
+    "scr": "blueberry.png"
+  },
+  {
+    "id" : 14,
+    "category": "Fruits",
+    "name": "Mango",
+    "price": "$12.00",
+    "discountPrice": "$11.00",
+    "rating": 5,
+    "isDiscount": true,
+    "scr": "mango.png"
+  },
+  {
+    "id" : 15,
+    "category": "Fruits",
+    "name": "Orange",
+    "price": "$8.00",
+    "discountPrice": "$6.00",
+    "rating": 5,
+    "isDiscount": false,
+    "scr": "orange.png"
+  },
+  {
+    "id" : 16,
+    "category": "Fruits",
+    "name": "Pineapple",
+    "price": "$17.00",
+    "discountPrice": "$16.00",
+    "rating": 5,
+    "isDiscount": false,
+    "scr": "pineapple.jpg"
+  },
+  {
+    "id" : 17,
+    "category": "Nuts",
+    "name": "Brown Hazelnut",
+    "price": "$25.00",
+    "discountPrice": "$18.00",
+    "rating": 5,
+    "isDiscount": true,
+    "scr": "nuts.png"
+  },
+  {
+    "id" : 18,
+    "category": "Nuts",
+    "name": "Brown Hazelnut",
+    "price": "$25.00",
+    "discountPrice": "$18.00",
+    "rating": 5,
+    "isDiscount": true,
+    "scr": "nuts.png"
+  },
+  {
+    "id" : 19,
+    "category": "Nuts",
+    "name": "Brown Hazelnut",
+    "price": "$25.00",
+    "discountPrice": "$18.00",
+    "rating": 5,
+    "isDiscount": true,
+    "scr": "nuts.png"
+  },
+  {
+    "id" : 20,
+    "category": "Nuts",
+    "name": "Brown Hazelnut",
+    "price": "$25.00",
+    "discountPrice": "$18.00",
+    "rating": 5,
+    "isDiscount": true,
+    "scr": "nuts.png"
+  },
+  {
+    "id" : 21,
+    "category": "Nuts",
+    "name": "Brown Hazelnut",
+    "price": "$25.00",
+    "discountPrice": "$18.00",
+    "rating": 5,
+    "isDiscount": true,
+    "scr": "nuts.png"
+  },
+  {
+    "id" : 22,
+    "category": "Nuts",
+    "name": "Brown Hazelnut",
+    "price": "$25.00",
+    "discountPrice": "$18.00",
+    "rating": 5,
+    "isDiscount": true,
+    "scr": "nuts.png"
+  },
+  {
+    "id" : 23,
+    "category": "Spicy",
+    "name": "Pepper",
+    "price": "$25.00",
+    "discountPrice": "$18.00",
+    "rating": 5,
+    "isDiscount": true,
+    "scr": "pepper.png"
+  },
+  {
+    "id" : 24,
+    "category": "Spicy",
+    "name": "Salt",
+    "price": "$25.00",
+    "discountPrice": "$18.00",
+    "rating": 5,
+    "isDiscount": true,
+    "scr": "salt.png"
   }
 ]

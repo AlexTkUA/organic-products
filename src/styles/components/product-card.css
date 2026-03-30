@@ -34,7 +34,7 @@
 }
 .product-card_photo img {
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 .product-card_name {
     color: var(--dark-teal-color);
