@@ -1,8 +1,11 @@
 "use strict"
-import {showLoader, hideLoader} from "./loader.js";
-const getData = (url, isLoaderNeed, selectorLoader) => {
-    if (isLoaderNeed) {
-        showLoader(selectorLoader);
+const getData = (url, selector) => {
+    const loaderEl = document.createElement("div");
+    loaderEl.classList.add("mask");
+    loaderEl.innerHTML = `<div class ="loader"></div>`;
+    const placeEl = document.querySelector(selector);
+    if (placeEl) {
+        placeEl.append(loaderEl);
     }
     return fetch(url).then(res => {
         if (!res.ok) {
@@ -14,7 +17,7 @@ const getData = (url, isLoaderNeed, selectorLoader) => {
         console.error(err.message)
     })
     .finally(() => {
-        hideLoader(selectorLoader);
+        loaderEl.remove();
     });
 }
 export default getData;

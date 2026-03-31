@@ -6,15 +6,18 @@ import { correctPath, correctPathToDate } from "./components/url.js";
 import showMobMenu from "./components/burger.js";
 import { renderList } from "./components/productList.js";
 import getData from "./components/getData.js";
-import { showLoader, hideLoader } from "./components/loader.js";
+
 import renderStats from "./components/statsCount.js";
 import renderNewsList from "./components/new-card.js";
 import renderBanner from "./components/renderBanner.js";
 import renderTeamsCards from "./components/renderTeams.js";
 import renderCategoryList from "./components/categories.js";
 import productFilterCategory from "./components/productFilter.js";
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("object");
+
   /**=============Render header================== */
   document.body.insertAdjacentHTML("afterbegin", renderHeader());
   /*===========================================*/
@@ -38,18 +41,21 @@ document.addEventListener("DOMContentLoaded", () => {
   /*===========================================*/
 
   /**=============Product list on main page=========== */
-  if (!window.location.href.includes("pages"))
+  if (!window.location.href.includes("pages")) {
     getData(
-      `${correctPathToDate(true)}data/products.json`,
-      true,
-      "[data-loader]",
-    ).then((data) => {
+      `${correctPathToDate(true)}data/products.json`,".shop_list" ).then((data) => {
       renderList(data, ".shop_list", 10);
 
-      let vegetables = data.filter((item) => item.category === "Vegetable");
-      vegetables = vegetables.slice(0, 4);
-      renderList(vegetables, ".bestProduct_wrapper", 4);
-    });
+      });
+      getData(
+        `${correctPathToDate(true)}data/products.json`,".bestProduct_wrapper" ).then((data) => {
+          let vegetables = data.filter((item) => item.category === "Vegetable");
+          vegetables = vegetables.slice(0, 4);
+          renderList(vegetables, ".bestProduct_wrapper", 4);
+  
+        });
+      
+  }
   /*===========================================*/
 
   /**=================Stats==================== */
@@ -87,14 +93,14 @@ document.addEventListener("DOMContentLoaded", () => {
   /**=================Shop on page============== */
   //Категорії товарів
   if (document.querySelector(".shop_category-list")) {
-    getData(`${correctPathToDate(true)}data/categories.json`).then((data) => {
+    getData(`${correctPathToDate(true)}data/categories.json`, ".shop_category-list").then((data) => {
       renderCategoryList(data, ".shop_category-list");
     });
   }
 
   //Товари
   if (document.querySelector(".shop_list-page")) {
-    getData(`${correctPathToDate(true)}data/products.json`).then((data) => {
+    getData(`${correctPathToDate(true)}data/products.json`, ".shop_list-page").then((data) => {
       renderList(data, ".shop_list-page", 8);
       productFilterCategory(data, ".shop_list-page");
     });

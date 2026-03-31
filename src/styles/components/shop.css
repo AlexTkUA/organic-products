@@ -22,6 +22,7 @@
     text-align: center;
 }
 .shop_list {
+    position: relative;
     display: flex;
     justify-content: center;
     min-height: 50vh;
@@ -31,6 +32,7 @@
     margin-bottom: 120px;
 }
 .shop_category-list {
+    position: relative;
     display: flex;
     justify-content: center;
     gap: 30px;

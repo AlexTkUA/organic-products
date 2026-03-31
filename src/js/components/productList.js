@@ -4,7 +4,6 @@ const renderList = (products, placeHolder, countOnPage) => {
   if (products.length === 0) {
     return;
   }
-  
   let currentPage = 1;
   const displayList = () => {
     const placeHolderElement = document.querySelector(placeHolder);
