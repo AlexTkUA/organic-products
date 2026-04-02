@@ -41,6 +41,7 @@
 @import url("components/teams.css");
 @import url("components/team-card.css");
 @import url("components/pagination.css");
+@import url("components/standards.css");
 
 .container {
     max-width: 1400px;
@@ -108,4 +109,7 @@
 }
 .fg2 {
     flex-grow: 2;
+}
+.order2 {
+    order: 2;
 }

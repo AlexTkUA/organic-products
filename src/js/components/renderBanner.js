@@ -10,6 +10,10 @@ const renderBanner = () => {
       title: "Shop",
       bannerClass: 'bannerShop',
     },
+    standards: {
+      title: "Quality Standard",
+      bannerClass: 'bannerStandard',
+    },
   };
     return (selector) => {
     const parts = window.location.pathname.split("/");

@@ -17,3 +17,6 @@
 .bannerShop {
   background-image: url("../../assets/img/bg-shop.png");
 }
+.bannerStandard {
+  background-image: url("../../assets/img/bg-quality.png")
+}

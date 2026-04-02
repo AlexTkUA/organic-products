@@ -42,7 +42,7 @@ const renderFooter  = () => {
         </div>
         <div class="footer_block fs3 middle-order">
           <div class="footer_block_middle">
-            <a href="index.html" class="logo mb26">
+            <a class="logo mb26">
               <div class="logo_img">
                 <img src="${startPath}assets/logo/logo.svg" alt="logo" />
               </div>
@@ -83,6 +83,9 @@ const renderFooter  = () => {
               </li>
               <li class="footer_block_links_list_item">
                 <a href="#">Changelog</a>
+              </li>
+              <li class="footer_block_links_list_item">
+                <a href="${startPath}pages/standards/index.html">Quality Standard</a>
               </li>
             </ul>
           </div>

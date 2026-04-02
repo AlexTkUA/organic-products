@@ -10,6 +10,16 @@ const correctPath = (isLifeServer) => {
   }
   return startUrl;
 };
+const pathToMainPage = () => {
+  let startUrl = '';
+  if (window.location.pathname.includes("pages")) {
+    if (window.location.pathname.includes("pages")) {
+      startUrl = "../../";
+    } else {
+      startUrl = "";
+    }
+  }
+}
 const correctPathToDate = (isLifeServer) => {
   let startUrl = ``;
   if (isLifeServer) {
@@ -21,4 +31,4 @@ const correctPathToDate = (isLifeServer) => {
   }
   return startUrl;
 };
-export { correctPath, correctPathToDate };
+export { correctPath, correctPathToDate, pathToMainPage };
