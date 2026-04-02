@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
   /**===============News block================== */
   if (document.querySelector(".news_wrapper")) {
     getData(`${correctPathToDate(true)}data/news.json`).then((data) => {
-      renderNewsList(data, ".news_wrapper", 2);
+      renderNewsList(data, ".news_wrapper", 4, 2);
     });
   }
   /**=========================================== */

@@ -1,15 +1,12 @@
 "use strict";
 import { getFormatMonth, getMonthName } from "./timeDB.js";
-const renderNewsList = (data, selectPlaceholder, count = 2) => {
-  const place = document.querySelector(selectPlaceholder);
-  // if (!place) {
-  //   return
-  // }
-  let html = ``;
-  const arrNews = data.news.slice(0, count);
-  arrNews
-    .sort((pre, next) => new Date(next.createdAt) - new Date(pre.createdAt))
-    .forEach((element) => {
+import { correctPath } from "./url.js";
+import { Pagination } from "./Pagination.js";
+const renderNewsList = (data, selectPlaceholder, countOnOnePage,  count = 2) => {
+  const newsPagination = new Pagination(countOnOnePage, data.news.length);
+  const renderStructure = (arr) => {
+    let html = ``;
+    arr.forEach((element) => {
       const { id, title, author, createdAt, paragraph, photo } = element;
       const words = paragraph.split(" ");
       let formattedPar = "";
@@ -24,7 +21,7 @@ const renderNewsList = (data, selectPlaceholder, count = 2) => {
       const fullDate = date + " " + month;
       html += `<div id = "${id}" class="new-card">
               <div class="new-card_bg">
-                <img src="src/assets/img/${photo}" alt="" />
+                <img src="${correctPath(true)}assets/img/${photo}" alt="" />
               </div>
               <div class="new-card_data">
                 <span class="new-card_data_text">${fullDate}</span>
@@ -41,13 +38,29 @@ const renderNewsList = (data, selectPlaceholder, count = 2) => {
                   <a href="#" class="button btnm0auto">
                     <span class="button_text">Read More</span>
                     <div class="button_icon">
-                      <img src="src/assets/icons/aerrow-blue.svg" alt="" />
+                      <img src="${correctPath(true)}assets/icons/aerrow-blue.svg" alt="" />
                     </div>
                   </a>
                 </div>
               </div>
             </div>`;
     });
-  place.innerHTML = html;
+    return html;
+  };
+  const displayNewsList = () => {
+    const place = document.querySelector(selectPlaceholder);
+    if (window.location.pathname.includes("news")) {
+      count = data.length;
+    }
+    let arrNews = data.news.slice(0, count);
+
+    arrNews = arrNews.sort(
+      (pre, next) => new Date(next.createdAt) - new Date(pre.createdAt),
+    );
+    arrNews = arrNews.slice(newsPagination.startArr, newsPagination.endArr);
+    place.innerHTML = renderStructure(arrNews);
+  };
+  displayNewsList();
+  newsPagination.renderPagination(displayNewsList);
 };
 export default renderNewsList;
