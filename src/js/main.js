@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /**===============News block================== */
   if (document.querySelector(".news_wrapper")) {
-    getData(`${correctPathToDate(true)}data/news.json`).then((data) => {
+    getData(`${correctPathToDate(true)}data/news.json`, ".news_wrapper").then((data) => {
       renderNewsList(data, ".news_wrapper", 4, 2);
     });
   }
@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /**==============Team list==================== */
   if (document.querySelector(".teams_wrapper")) {
-    getData(`${correctPath(true)}data/team.json`).then((data) => {
+    getData(`${correctPath(true)}data/team.json`, ".teams_wrapper").then((data) => {
       renderTeamsCards(data, ".teams_wrapper");
     });
   }

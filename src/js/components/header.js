@@ -26,7 +26,7 @@ const renderHeader = () => {
               <li class = "nav_mob_list_item"><a href="${startUrl}pages/aboutUs/index.html">About</a></li>
               <li class = "nav_mob_list_item"><a href="${startUrl}pages/shop/index.html">Shop</a></li>
               <li class = "nav_mob_list_item"><a href="#">Projects</a></li>
-              <li class = "nav_mob_list_item"><a href="#">News</a></li>
+              <li class = "nav_mob_list_item"><a href="${startUrl}pages/news/index.html">News</a></li>
             </ul>
           </nav>
           <form id = "formForSearch" class = "search" action="">

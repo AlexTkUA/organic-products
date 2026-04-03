@@ -1,17 +1,20 @@
 "use strict";
 import { correctPath, correctPathToDate } from "./url.js";
+import { Pagination } from "./Pagination.js";
 const renderList = (products, placeHolder, countOnPage) => {
   if (products.length === 0) {
     return;
   }
-  let currentPage = 1;
+  const productPagination = new Pagination(countOnPage, products.length);
+
   const displayList = () => {
     const placeHolderElement = document.querySelector(placeHolder);
     placeHolderElement.innerHTML = ``;
 
-    const star = (currentPage - 1) * countOnPage;
-    const end = star + countOnPage;
-    const slicedArr = products.slice(star, end);
+    const slicedArr = products.slice(
+      productPagination.startArr,
+      productPagination.endArr,
+    );
 
     let html = ``;
     slicedArr.forEach((element) => {
@@ -51,40 +54,8 @@ const renderList = (products, placeHolder, countOnPage) => {
     });
     placeHolderElement.innerHTML = html;
   };
-  const displayPagination = (dataArr) => {
-    const pagEl = document.querySelector(".pagination");
-    if (!pagEl) {
-      return
-    }
-    pagEl.innerHTML = ``;
-    if (!pagEl) {
-      return;
-    }
-    const countPages = Math.ceil(dataArr.length / countOnPage)
 
-    const pagListEl = document.createElement("ul");
-    pagListEl.classList.add("pagination_list")
-    pagListEl.innerHTML = ``;
-    
-    for (let i = 0; i < countPages; i++) {
-      const pagItemEl = document.createElement("li");
-      pagItemEl.classList.add("pagination_list_item")
-      pagItemEl.textContent = i + 1;
-      pagListEl.appendChild(pagItemEl);
-
-      pagItemEl.addEventListener("click", () => {
-        const activePag = document.querySelector(".pag-active");
-        if (activePag) {
-          activePag.classList.remove("pag-active")
-        }
-        currentPage = parseInt(pagItemEl.textContent);
-        displayList();
-        pagItemEl.classList.add("pag-active");
-      })
-    }
-    pagEl.appendChild(pagListEl);
-  };
   displayList();
-  displayPagination(products);
+  productPagination.renderPagination(displayList);
 };
 export { renderList };

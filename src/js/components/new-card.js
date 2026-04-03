@@ -19,9 +19,9 @@ const renderNewsList = (data, selectPlaceholder, countOnOnePage,  count = 2) => 
       const date = d.getDate() >= 10 ? d.getDate() : "0" + d.getDate();
       const month = getFormatMonth(getMonthName(d.getMonth()), 0, 3);
       const fullDate = date + " " + month;
-      html += `<div id = "${id}" class="new-card">
+      html += `<div class="new-card">
               <div class="new-card_bg">
-                <img src="${correctPath(true)}assets/img/${photo}" alt="" />
+                <img src="${correctPath(true)}assets/img/${photo}/?id="${id}" alt="" />
               </div>
               <div class="new-card_data">
                 <span class="new-card_data_text">${fullDate}</span>
@@ -35,7 +35,7 @@ const renderNewsList = (data, selectPlaceholder, countOnOnePage,  count = 2) => 
                   <p class="new-card_info_paragraph">
                     ${formattedPar}
                   </p>
-                  <a href="#" class="button btnm0auto">
+                  <a href="${correctPath(true)}pages/article/index.html" class="button btnm0auto">
                     <span class="button_text">Read More</span>
                     <div class="button_icon">
                       <img src="${correctPath(true)}assets/icons/aerrow-blue.svg" alt="" />
