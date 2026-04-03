@@ -2,7 +2,6 @@
 import { correctPath } from "./url.js";
 const renderFooter  = () => {
   const startPath = correctPath(true);
-  console.log(startPath);
     return `<footer class="footer">
       <div class="container footer-container">
         <div class="footer_block contact-order">

@@ -58,6 +58,11 @@
   border-radius: 30px;
   background: rgba(241, 237, 234, 1);
 }
+.article_info_article {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .article_info_text_block_paragraph {
     color: var(--color-slate-gray);
     font-family: "Open Sans";

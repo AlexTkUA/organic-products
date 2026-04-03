@@ -7,8 +7,9 @@ const renderNewsList = (data, selectPlaceholder, countOnOnePage,  count = 2) => 
   const renderStructure = (arr) => {
     let html = ``;
     arr.forEach((element) => {
-      const { id, title, author, createdAt, paragraph, photo } = element;
-      const words = paragraph.split(" ");
+      const { id, author, createdAt, promo} = element;
+      const {photo, promoTitle, promoParagraph} = promo
+      const words = promoParagraph.split(" ");
       let formattedPar = "";
       if (words.length >= 15) {
         formattedPar = words.slice(0, 15).join(" ") + "...";
@@ -21,7 +22,7 @@ const renderNewsList = (data, selectPlaceholder, countOnOnePage,  count = 2) => 
       const fullDate = date + " " + month;
       html += `<div class="new-card">
               <div class="new-card_bg">
-                <img src="${correctPath(true)}assets/img/${photo}/?id="${id}" alt="" />
+                <img src="${correctPath(true)}assets/img/${photo}" alt="" />
               </div>
               <div class="new-card_data">
                 <span class="new-card_data_text">${fullDate}</span>
@@ -30,12 +31,12 @@ const renderNewsList = (data, selectPlaceholder, countOnOnePage,  count = 2) => 
                 <div class="new-card_info">
                   <span class="new-card_info_creator">By ${author}</span>
                   <h6 class="new-card_info_title">
-                    ${title}
+                    ${promoTitle}
                   </h6>
                   <p class="new-card_info_paragraph">
                     ${formattedPar}
                   </p>
-                  <a href="${correctPath(true)}pages/article/index.html" class="button btnm0auto">
+                  <a href="${correctPath(true)}pages/article/index.html?id=${id}" class="button btnm0auto">
                     <span class="button_text">Read More</span>
                     <div class="button_icon">
                       <img src="${correctPath(true)}assets/icons/aerrow-blue.svg" alt="" />

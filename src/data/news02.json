@@ -1,0 +1,268 @@
+{
+  "news": [
+    {
+      "id": "1",
+      "createdAt": "2026-03-20T10:30:00Z",
+      "author": "Emma Green",
+      "promo": {
+        "photo": "photo07.png",
+        "promoTitle": "Research More Organic Food",
+        "promoParagraph": "Established fact that a reader will be distracted by the readable content of a page when looking a layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed"
+      },
+      "infoBlocks": [
+        {
+          "isNeed": true,
+          "titleInfoBlock": "Preferred Form of Vitamin D?",
+          "paragraphInfoBlock": "It is a long established fact that a reader will be distracted by the readable content of a page when looking a layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+          "listInfo": [
+            "Publishing packages and web pageLorem Ipsum as their default",
+            "Content here, content here', making it look like readable",
+            "Packages and web pageLorem Ipsum as their default"
+          ]
+        },
+        {
+          "isNeed": true,
+          "titleInfoBlock": "Make perfect organic product with us",
+          "paragraphInfoBlock": "It is a long established fact that a reader will be distracted by the readable content of a page when looking a layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+          "listInfo": [
+            "Publishing packages and web pageLorem Ipsum as their default",
+            "Content here, content here', making it look like readable",
+            "Packages and web pageLorem Ipsum as their default"
+          ]
+        }
+      ],
+      "textBlockParagraph": "“The first rule of any organic used in a business is that nature applied to an efficient operation will magnify the efficiency. The second is that organic applied to an inefficient operation will magnify the health.”"
+    },
+    {
+      "id": "2",
+      "createdAt": "2026-01-20T10:30:00Z",
+      "author": "Emma Green",
+      "promo": {
+        "photo": "photo08.png",
+        "promoTitle": "Research More Organic Food",
+        "promoParagraph": "Established fact that a reader will be distracted by the readable content of a page when looking a layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed"
+      },
+      "infoBlocks": [
+        {
+          "isNeed": true,
+          "titleInfoBlock": "Preferred Form of Vitamin D?",
+          "paragraphInfoBlock": "It is a long established fact that a reader will be distracted by the readable content of a page when looking a layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+          "listInfo": [
+            "Publishing packages and web pageLorem Ipsum as their default",
+            "Content here, content here', making it look like readable",
+            "Packages and web pageLorem Ipsum as their default"
+          ]
+        },
+        {
+          "isNeed": true,
+          "titleInfoBlock": "Make perfect organic product with us",
+          "paragraphInfoBlock": "It is a long established fact that a reader will be distracted by the readable content of a page when looking a layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+          "listInfo": [
+            "Publishing packages and web pageLorem Ipsum as their default",
+            "Content here, content here', making it look like readable",
+            "Packages and web pageLorem Ipsum as their default"
+          ]
+        }
+      ],
+      "textBlockParagraph": "“The first rule of any organic used in a business is that nature applied to an efficient operation will magnify the efficiency. The second is that organic applied to an inefficient operation will magnify the health.”"
+    },
+    {
+      "id": "3",
+      "createdAt": "2023-03-20T10:30:00Z",
+      "author": "Emma Green",
+      "promo": {
+        "photo": "photo09.png",
+        "promoTitle": "Research More Organic Food",
+        "promoParagraph": "Established fact that a reader will be distracted by the readable content of a page when looking a layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed"
+      },
+      "infoBlocks": [
+        {
+          "isNeed": true,
+          "titleInfoBlock": "Preferred Form of Vitamin D?",
+          "paragraphInfoBlock": "It is a long established fact that a reader will be distracted by the readable content of a page when looking a layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+          "listInfo": [
+            "Publishing packages and web pageLorem Ipsum as their default",
+            "Content here, content here', making it look like readable",
+            "Packages and web pageLorem Ipsum as their default"
+          ]
+        },
+        {
+          "isNeed": true,
+          "titleInfoBlock": "Make perfect organic product with us",
+          "paragraphInfoBlock": "It is a long established fact that a reader will be distracted by the readable content of a page when looking a layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+          "listInfo": [
+            "Publishing packages and web pageLorem Ipsum as their default",
+            "Content here, content here', making it look like readable",
+            "Packages and web pageLorem Ipsum as their default"
+          ]
+        }
+      ],
+      "textBlockParagraph": "“The first rule of any organic used in a business is that nature applied to an efficient operation will magnify the efficiency. The second is that organic applied to an inefficient operation will magnify the health.”"
+    },
+    {
+      "id": "4",
+      "createdAt": "2026-03-14T10:30:00Z",
+      "author": "Emma Green",
+      "promo": {
+        "photo": "photo010.png",
+        "promoTitle": "Research More Organic Food",
+        "promoParagraph": "Established fact that a reader will be distracted by the readable content of a page when looking a layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed"
+      },
+      "infoBlocks": [
+        {
+          "isNeed": true,
+          "titleInfoBlock": "Preferred Form of Vitamin D?",
+          "paragraphInfoBlock": "It is a long established fact that a reader will be distracted by the readable content of a page when looking a layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+          "listInfo": [
+            "Publishing packages and web pageLorem Ipsum as their default",
+            "Content here, content here', making it look like readable",
+            "Packages and web pageLorem Ipsum as their default"
+          ]
+        },
+        {
+          "isNeed": true,
+          "titleInfoBlock": "Make perfect organic product with us",
+          "paragraphInfoBlock": "It is a long established fact that a reader will be distracted by the readable content of a page when looking a layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+          "listInfo": [
+            "Publishing packages and web pageLorem Ipsum as their default",
+            "Content here, content here', making it look like readable",
+            "Packages and web pageLorem Ipsum as their default"
+          ]
+        }
+      ],
+      "textBlockParagraph": "“The first rule of any organic used in a business is that nature applied to an efficient operation will magnify the efficiency. The second is that organic applied to an inefficient operation will magnify the health.”"
+    },
+    {
+      "id": "5",
+      "createdAt": "2026-03-22T10:30:00Z",
+      "author": "Emma Green",
+      "promo": {
+        "photo": "photo011.png",
+        "promoTitle": "Research More Organic Food",
+        "promoParagraph": "Established fact that a reader will be distracted by the readable content of a page when looking a layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed"
+      },
+      "infoBlocks": [
+        {
+          "isNeed": true,
+          "titleInfoBlock": "Preferred Form of Vitamin D?",
+          "paragraphInfoBlock": "It is a long established fact that a reader will be distracted by the readable content of a page when looking a layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+          "listInfo": [
+            "Publishing packages and web pageLorem Ipsum as their default",
+            "Content here, content here', making it look like readable",
+            "Packages and web pageLorem Ipsum as their default"
+          ]
+        },
+        {
+          "isNeed": true,
+          "titleInfoBlock": "Make perfect organic product with us",
+          "paragraphInfoBlock": "It is a long established fact that a reader will be distracted by the readable content of a page when looking a layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+          "listInfo": [
+            "Publishing packages and web pageLorem Ipsum as their default",
+            "Content here, content here', making it look like readable",
+            "Packages and web pageLorem Ipsum as their default"
+          ]
+        }
+      ],
+      "textBlockParagraph": "“The first rule of any organic used in a business is that nature applied to an efficient operation will magnify the efficiency. The second is that organic applied to an inefficient operation will magnify the health.”"
+    },
+    {
+      "id": "6",
+      "createdAt": "2026-03-28T10:30:00Z",
+      "author": "Emma Green",
+      "promo": {
+        "photo": "photo012.png",
+        "promoTitle": "Research More Organic Food",
+        "promoParagraph": "Established fact that a reader will be distracted by the readable content of a page when looking a layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed"
+      },
+      "infoBlocks": [
+        {
+          "isNeed": true,
+          "titleInfoBlock": "Preferred Form of Vitamin D?",
+          "paragraphInfoBlock": "It is a long established fact that a reader will be distracted by the readable content of a page when looking a layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+          "listInfo": [
+            "Publishing packages and web pageLorem Ipsum as their default",
+            "Content here, content here', making it look like readable",
+            "Packages and web pageLorem Ipsum as their default"
+          ]
+        },
+        {
+          "isNeed": true,
+          "titleInfoBlock": "Make perfect organic product with us",
+          "paragraphInfoBlock": "It is a long established fact that a reader will be distracted by the readable content of a page when looking a layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+          "listInfo": [
+            "Publishing packages and web pageLorem Ipsum as their default",
+            "Content here, content here', making it look like readable",
+            "Packages and web pageLorem Ipsum as their default"
+          ]
+        }
+      ],
+      "textBlockParagraph": "“The first rule of any organic used in a business is that nature applied to an efficient operation will magnify the efficiency. The second is that organic applied to an inefficient operation will magnify the health.”"
+    },
+    {
+      "id": "7",
+      "createdAt": "2026-03-29T10:30:00Z",
+      "author": "Emma Green",
+      "promo": {
+        "photo": "photo07.png",
+        "promoTitle": "Research More Organic Food",
+        "promoParagraph": "Established fact that a reader will be distracted by the readable content of a page when looking a layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed"
+      },
+      "infoBlocks": [
+        {
+          "isNeed": true,
+          "titleInfoBlock": "Preferred Form of Vitamin D?",
+          "paragraphInfoBlock": "It is a long established fact that a reader will be distracted by the readable content of a page when looking a layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+          "listInfo": [
+            "Publishing packages and web pageLorem Ipsum as their default",
+            "Content here, content here', making it look like readable",
+            "Packages and web pageLorem Ipsum as their default"
+          ]
+        },
+        {
+          "isNeed": true,
+          "titleInfoBlock": "Make perfect organic product with us",
+          "paragraphInfoBlock": "It is a long established fact that a reader will be distracted by the readable content of a page when looking a layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+          "listInfo": [
+            "Publishing packages and web pageLorem Ipsum as their default",
+            "Content here, content here', making it look like readable",
+            "Packages and web pageLorem Ipsum as their default"
+          ]
+        }
+      ],
+      "textBlockParagraph": "“The first rule of any organic used in a business is that nature applied to an efficient operation will magnify the efficiency. The second is that organic applied to an inefficient operation will magnify the health.”"
+    },
+    {
+      "id": "8",
+      "createdAt": "2026-03-10T10:30:00Z",
+      "author": "Emma Green",
+      "promo": {
+        "photo": "photo09.png",
+        "promoTitle": "Research More Organic Food",
+        "promoParagraph": "Established fact that a reader will be distracted by the readable content of a page when looking a layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed"
+      },
+      "infoBlocks": [
+        {
+          "isNeed": true,
+          "titleInfoBlock": "Preferred Form of Vitamin D?",
+          "paragraphInfoBlock": "It is a long established fact that a reader will be distracted by the readable content of a page when looking a layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+          "listInfo": [
+            "Publishing packages and web pageLorem Ipsum as their default",
+            "Content here, content here', making it look like readable",
+            "Packages and web pageLorem Ipsum as their default"
+          ]
+        },
+        {
+          "isNeed": true,
+          "titleInfoBlock": "Make perfect organic product with us",
+          "paragraphInfoBlock": "It is a long established fact that a reader will be distracted by the readable content of a page when looking a layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+          "listInfo": [
+            "Publishing packages and web pageLorem Ipsum as their default",
+            "Content here, content here', making it look like readable",
+            "Packages and web pageLorem Ipsum as their default"
+          ]
+        }
+      ],
+      "textBlockParagraph": "“The first rule of any organic used in a business is that nature applied to an efficient operation will magnify the efficiency. The second is that organic applied to an inefficient operation will magnify the health.”"
+    }
+  ]
+}

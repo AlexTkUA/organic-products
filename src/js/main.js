@@ -13,6 +13,7 @@ import renderBanner from "./components/renderBanner.js";
 import renderTeamsCards from "./components/renderTeams.js";
 import renderCategoryList from "./components/categories.js";
 import productFilterCategory from "./components/productFilter.js";
+import renderNewsPage from "./components/article.js";
 
 
 
@@ -69,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /**===============News block================== */
   if (document.querySelector(".news_wrapper")) {
-    getData(`${correctPathToDate(true)}data/news.json`, ".news_wrapper").then((data) => {
+    getData(`${correctPathToDate(true)}data/news02.json`, ".news_wrapper").then((data) => {
       renderNewsList(data, ".news_wrapper", 4, 2);
     });
   }
@@ -106,4 +107,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
   /**=========================================== */
+
+  /**================Render article=============== */
+  if (document.querySelector(".container_info_promo")) {
+    getData(`${correctPathToDate(true)}data/news02.json`, ".container_info_promo")
+    .then(data => {
+      renderNewsPage(data, ".container_info_promo");
+    })
+  }
+  /**============================================= */
 });
