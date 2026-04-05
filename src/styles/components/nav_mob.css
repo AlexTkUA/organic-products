@@ -9,7 +9,7 @@
     background-color: var(--white-color);
     right: 0px;
     transform: translateX(100%);  /* схований праворуч */
-    top: 100px;
+    top: 0px;
     padding-left: 30px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
@@ -36,9 +36,24 @@
 .nav_mob-show {
     transform: translateX(0%);
 }
+.nav_mob_closer {
+    color: var(--dark-teal-color);
+    font-family: "Roboto";
+    font-size: var(--font-size-list);
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: left;
+    transition: 0.3s;
+    margin-top: 20px;
+    align-self: flex-end;
+    margin-right: 30px;
+}
 @media (max-width: 480px) {
     .nav_mob {
         display: flex;
+        flex-direction: column
+        ;
     }
     .nav_mob_list_item:hover {
     scale: inherit;

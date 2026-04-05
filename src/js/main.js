@@ -3,7 +3,7 @@ import renderHeader from "./components/header.js";
 import renderFooter from "./components/footer.js";
 import renderEmailForm from "./components/renderEmailForm.js";
 import { correctPath, correctPathToDate } from "./components/url.js";
-import showMobMenu from "./components/burger.js";
+import burgerAction from "./components/burger.js";
 import { renderList } from "./components/productList.js";
 import getData from "./components/getData.js";
 
@@ -16,10 +16,7 @@ import productFilterCategory from "./components/productFilter.js";
 import renderNewsPage from "./components/article.js";
 import videoAction from "./components/player.js";
 
-
-
 document.addEventListener("DOMContentLoaded", () => {
-
   /**=============Render header================== */
   document.body.insertAdjacentHTML("afterbegin", renderHeader());
   /*===========================================*/
@@ -37,26 +34,25 @@ document.addEventListener("DOMContentLoaded", () => {
   /*===========================================*/
 
   /**============Burger Action ==============*/
-  const burgerElement = document.querySelector(".burger");
-  const mobMenuElement = document.querySelector(".nav_mob");
-  showMobMenu(burgerElement, mobMenuElement);
+
+  burgerAction();
   /*===========================================*/
 
   /**=============Product list on main page=========== */
   if (!window.location.href.includes("pages")) {
+    getData(`${correctPathToDate(true)}data/products.json`, ".shop_list").then(
+      (data) => {
+        renderList(data, ".shop_list", 10);
+      },
+    );
     getData(
-      `${correctPathToDate(true)}data/products.json`,".shop_list" ).then((data) => {
-      renderList(data, ".shop_list", 10);
-
-      });
-      getData(
-        `${correctPathToDate(true)}data/products.json`,".bestProduct_wrapper" ).then((data) => {
-          let vegetables = data.filter((item) => item.category === "Vegetable");
-          vegetables = vegetables.slice(0, 4);
-          renderList(vegetables, ".bestProduct_wrapper", 4);
-  
-        });
-      
+      `${correctPathToDate(true)}data/products.json`,
+      ".bestProduct_wrapper",
+    ).then((data) => {
+      let vegetables = data.filter((item) => item.category === "Vegetable");
+      vegetables = vegetables.slice(0, 4);
+      renderList(vegetables, ".bestProduct_wrapper", 4);
+    });
   }
   /*===========================================*/
 
@@ -71,9 +67,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /**===============News block================== */
   if (document.querySelector(".news_wrapper")) {
-    getData(`${correctPathToDate(true)}data/news02.json`, ".news_wrapper").then((data) => {
-      renderNewsList(data, ".news_wrapper", 4, 2);
-    });
+    getData(`${correctPathToDate(true)}data/news02.json`, ".news_wrapper").then(
+      (data) => {
+        renderNewsList(data, ".news_wrapper", 4, 2);
+      },
+    );
   }
   /**=========================================== */
 
@@ -86,23 +84,31 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /**==============Team list==================== */
   if (document.querySelector(".teams_wrapper")) {
-    getData(`${correctPath(true)}data/team.json`, ".teams_wrapper").then((data) => {
-      renderTeamsCards(data, ".teams_wrapper");
-    });
+    getData(`${correctPath(true)}data/team.json`, ".teams_wrapper").then(
+      (data) => {
+        renderTeamsCards(data, ".teams_wrapper");
+      },
+    );
   }
   /**=========================================== */
 
   /**=================Shop on page============== */
   //Категорії товарів
   if (document.querySelector(".shop_category-list")) {
-    getData(`${correctPathToDate(true)}data/categories.json`, ".shop_category-list").then((data) => {
+    getData(
+      `${correctPathToDate(true)}data/categories.json`,
+      ".shop_category-list",
+    ).then((data) => {
       renderCategoryList(data, ".shop_category-list");
     });
   }
 
   //Товари
   if (document.querySelector(".shop_list-page")) {
-    getData(`${correctPathToDate(true)}data/products.json`, ".shop_list-page").then((data) => {
+    getData(
+      `${correctPathToDate(true)}data/products.json`,
+      ".shop_list-page",
+    ).then((data) => {
       renderList(data, ".shop_list-page", 8);
       productFilterCategory(data, ".shop_list-page");
     });
@@ -111,12 +117,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /**================Render article=============== */
   if (document.querySelector(".container_info_promo")) {
-    getData(`${correctPathToDate(true)}data/news02.json`, ".container_info_promo")
-    .then(data => {
+    getData(
+      `${correctPathToDate(true)}data/news02.json`,
+      ".container_info_promo",
+    ).then((data) => {
       renderNewsPage(data, ".container_info_promo");
-    })
+    });
   }
   /**============================================= */
-  videoAction();
+
+  /**================Video player================= */
+  if (document.querySelector("[data-video]")) {
+    videoAction();
+  }
 });
 /**=============================================== */

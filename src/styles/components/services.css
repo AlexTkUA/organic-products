@@ -1,3 +1,6 @@
+.ourProducts {
+  padding: 30px 0px;
+}
 .ourProducts_upperWrapper {
   max-width: 482px;
   margin: 0 auto;
@@ -71,6 +74,12 @@
 .videoSection_video_player_icon {
 width: 21.75px;
 height: 24.2px;
+display: flex;
+justify-content: center;
+align-items:center;
+}
+.videoSection_wrapper {
+  padding: 0px 30px; 
 }
 [data-video] {
    max-width: 100%;
@@ -87,6 +96,14 @@ height: 24.2px;
 @media (max-width: 500px) {
   .ourProducts_lowerWrapper {
     flex-wrap: wrap;
+  }
+  .videoSection_video_player {
+    width: 60px;
+    height: 60px;
+  }
+  .videoSection_video_player_icon {
+    width: 10px;
+    height: 10px;
   }
   .ourProducts_lowerWrapper_list {
     padding: 0px 30px;
