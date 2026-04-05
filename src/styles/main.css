@@ -43,10 +43,15 @@
 @import url("components/pagination.css");
 @import url("components/standards.css");
 @import url("components/article.css");
+@import url("components/services.css");
 
 .container {
     max-width: 1400px;
     margin: 0 auto;
+}
+.rigth-list * {
+    text-align: end;
+    align-self: end;
 }
 .top0 {
     top: 0px;
@@ -71,6 +76,9 @@
 }
 .mw850 {
     max-width: 850px;
+}
+.maxw600 {
+    max-width: 600px;
 }
 .m0a {
     margin: 0 auto;

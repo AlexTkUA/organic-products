@@ -1,5 +1,6 @@
 "use strict";
 import { correctPath } from "./url.js";
+import { getFormatDate } from "./timeDB.js";
 
 const renderNewsPage = (data, placeHolder) => {
   const urlGet = new URLSearchParams(window.location.search);
@@ -26,6 +27,9 @@ const renderNewsPage = (data, placeHolder) => {
   };
 
   const renderPromo = (photo, createdAt, author, title, paragraph) => {
+    const d = new Date(createdAt);
+    const articleTime = getFormatDate(d.getMonth(), d.getDate(), d.getFullYear());
+
     const mainBlockEl = document.createElement("div");
     mainBlockEl.classList.add("article_info_promo");
 
@@ -47,7 +51,7 @@ const renderNewsPage = (data, placeHolder) => {
 
     const dateEl = document.createElement("span");
     dateEl.classList.add("article_info_promo_author_date");
-    dateEl.innerHTML = `<b>Posted On:</b>${createdAt}`;
+    dateEl.innerHTML = `<b>Posted On:</b> ${articleTime}`;
 
     const nameEl = document.createElement("span");
     nameEl.classList.add("article_info_promo_author_name");

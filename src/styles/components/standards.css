@@ -1,10 +1,15 @@
 .standards {
 }
 .standard_photo {
-  height: auto;
+  height: 500px;
   width: 100%;
   max-width: 100%;
   padding: 40px 35px;
+}
+.standard_photo img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 .standard_info {
   max-width: 936px;
@@ -59,4 +64,7 @@
     .standard_info_block_img.order2  {
         order: 1;
     }
-}
+    .standard_photo {
+      height: auto;
+    }
+} 

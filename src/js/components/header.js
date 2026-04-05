@@ -1,8 +1,8 @@
 "use strict";
-import { correctPath,  } from "./url.js";
+import { correctPath } from "./url.js";
 const renderHeader = () => {
   const startUrl = correctPath(true);
-    const html = `<header class = "header">
+  const html = `<header class = "header">
         <div class="container header-container">
           <a href="${startUrl === "../../" ? startUrl + "../" : ""}index.html" class = "logo">
             <div class = "logo_img">
@@ -19,6 +19,7 @@ const renderHeader = () => {
               <li class = "nav_list_item"><a href="${startUrl}pages/shop/index.html">Shop</a></li>
               <li class = "nav_list_item"><a href="#">Projects</a></li>
               <li class = "nav_list_item"><a href="${startUrl}pages/news/index.html">News</a></li>
+              <li class = "nav_list_item"><a href="${startUrl}pages/services/index.html">Services</a></li>
             </ul>
           </nav>
           <nav class = "nav_mob">
@@ -27,7 +28,9 @@ const renderHeader = () => {
               <li class = "nav_mob_list_item"><a href="${startUrl}pages/shop/index.html">Shop</a></li>
               <li class = "nav_mob_list_item"><a href="#">Projects</a></li>
               <li class = "nav_mob_list_item"><a href="${startUrl}pages/news/index.html">News</a></li>
-            </ul>
+              <li class = "nav_list_item"><a href="${startUrl}pages/services/index.html">Services</a></li>
+
+              </ul>
           </nav>
           <form id = "formForSearch" class = "search" action="">
             <div class = search_placeholder>
@@ -40,7 +43,8 @@ const renderHeader = () => {
             <span class = "cart_icon_count">Cart (0)</span>
           </div>
         </div>
-    </header>`
-    return html;
-}
+    </header>`;
+
+  return html;
+};
 export default renderHeader;

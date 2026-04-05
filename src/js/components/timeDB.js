@@ -19,4 +19,7 @@ const getMonthName = (index) => {
 const getFormatMonth = (month, start, end) => {
     return month.substring(start, end);
 }
-export {getMonthName, getFormatMonth};
+const getFormatDate = (month, day, year) => {
+    return `${months[month]} ${day}, ${year}`
+}
+export {getMonthName, getFormatMonth, getFormatDate};

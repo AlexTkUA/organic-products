@@ -17,6 +17,10 @@ const renderBanner = () => {
     news: {
       title: "Recent  News",
       bannerClass: "bannerNews"
+    },
+    services: {
+      title: "Services",
+      bannerClass: "bannerServices"
     }
   };
     return (selector) => {
