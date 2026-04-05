@@ -14,6 +14,7 @@ import renderTeamsCards from "./components/renderTeams.js";
 import renderCategoryList from "./components/categories.js";
 import productFilterCategory from "./components/productFilter.js";
 import renderNewsPage from "./components/article.js";
+import videoAction from "./components/player.js";
 
 
 
@@ -116,4 +117,6 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   }
   /**============================================= */
+  videoAction();
 });
+/**=============================================== */

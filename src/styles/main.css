@@ -45,6 +45,9 @@
 @import url("components/article.css");
 @import url("components/services.css");
 
+.hide {
+    display: none;
+}
 .container {
     max-width: 1400px;
     margin: 0 auto;

@@ -4,14 +4,14 @@
   text-align: center;
 }
 .ourProducts_lowerWrapper {
-    margin-top: 30px;
+  margin-top: 30px;
   display: flex;
-  align-items:center;
+  align-items: center;
 }
 .ourProducts_lowerWrapper_list {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 .ourProducts_lowerWrapper_list_item {
   min-height: 184.37px;
@@ -33,16 +33,76 @@
   text-align: left;
 }
 .ourProducts_lowerWrapper_list_item_text {
-    color: var(--color-slate-gray);
-    font-family: "Open Sans";
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 165.4%;
-    letter-spacing: 0%;
+  color: var(--color-slate-gray);
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 165.4%;
+  letter-spacing: 0%;
 }
 .ourProducts_lowerWrapper_img {
-    height: 100%;
-    width: 100%;
-    min-width: 370px;
-    object-fit: contain;
+  height: 100%;
+  width: 100%;
+  min-width: 370px;
+  object-fit: contain;
+}
+.videoSection_video {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  display: flex;
+  position: relative;
+}
+.videoSection_video_player {
+  background: rgba(126, 182, 147, 1);
+  border-radius: 100%;
+  width: 107px;
+  height: 107px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 2;
+}
+.videoSection_video_player_icon {
+width: 21.75px;
+height: 24.2px;
+}
+[data-video] {
+   max-width: 100%;
+}
+@media(max-width: 900px ) {
+  .ourProducts_lowerWrapper_img {
+    display: none;
+    
+  }
+  .ourProducts_lowerWrapper {
+    gap:40px
+  }
+}
+@media (max-width: 500px) {
+  .ourProducts_lowerWrapper {
+    flex-wrap: wrap;
+  }
+  .ourProducts_lowerWrapper_list {
+    padding: 0px 30px;
+  }
+  .ourProducts_lowerWrapper_list_item {
+     
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+
+  }
+  .ourProducts_lowerWrapper_list.rigth-list * {
+    align-self: flex-start;
+    text-align: start;
+  }
+  .ourProducts_lowerWrapper {
+    gap: 30px;
+  }
 }
