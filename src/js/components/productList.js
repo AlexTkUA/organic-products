@@ -18,9 +18,9 @@ const renderList = (products, placeHolder, countOnPage) => {
 
     let html = ``;
     slicedArr.forEach((element) => {
-      const { category, name, price, discountPrice, rating, isDiscount, scr } =
+      const {id, category, name, price, discountPrice, rating, isDiscount, scr } =
         element;
-      html += `<a href="#" class="product-card">
+      html += `<a href="${correctPath(true)}pages/productPage/index.html?id=${id}" class="product-card">
               <span class="product-card_category">${category}</span>
               <div class="product-card_photo">
                 <img data-photo

@@ -26,3 +26,6 @@ background-image: url("../../assets/img/bg-news.png")
 .bannerServices {
   background-image: url("../../assets/img/bg-services.png")
 }
+.bannerProduct {
+  background-image: url("../../assets/img/productBanner.jpg")
+}

@@ -1,6 +1,6 @@
 [
   {
-    "id" : 1,
+    "id" : "1",
     "category": "Vegetable",
     "name": "Calabrese Broccoli",
     "price": "$20.00",
@@ -10,7 +10,7 @@
     "scr": "product01.png"
   },
   {
-    "id" : 2,
+    "id" : "2",
     "category": "Fresh",
     "name": "Fresh Banana Fruites",
     "price": "$18.00",
@@ -20,7 +20,7 @@
     "scr": "product02.png"
   },
   {
-    "id" : 3,
+    "id" : "3",
     "category": "Millets",
     "name": "White Nuts",
     "price": "$15.00",
@@ -30,7 +30,7 @@
     "scr": "product03.png"
   },
   {
-    "id" : 4,
+    "id" : "4",
     "category": "Vegetable",
     "name": "Vegan Red Tomato",
     "price": "$17.00",
@@ -40,7 +40,7 @@
     "scr": "product04.png"
   },
   {
-    "id" : 5,
+    "id" : "5",
     "category": "Health",
     "name": "Mung Bean",
     "price": "$11.00",
@@ -50,7 +50,7 @@
     "scr": "product05.png"
   },
   {
-    "id" : 6,
+    "id" : "6",
     "category": "Nuts",
     "name": "Brown Hazelnut",
     "price": "$25.00",
@@ -60,7 +60,7 @@
     "scr": "product06.png"
   },
   {
-    "id" : 7,
+    "id" : "7",
     "category": "Vegetable",
     "name": "Mung Bean",
     "price": "$12.00",
@@ -70,7 +70,7 @@
     "scr": "product07.png"
   },
   {
-    "id" : 8,
+    "id" : "8",
     "category": "Vegetable",
     "name": "Brown Hazelnut",
     "price": "$26.00",
@@ -80,7 +80,7 @@
     "scr": "product08.png"
   },
   {
-    "id" : 9,
+    "id" : "9",
     "category": "Vegetable",
     "name": "Onion",
     "price": "$8.00",
@@ -90,7 +90,7 @@
     "scr": "product09.png"
   },
   {
-    "id" : 10,
+    "id" : "10",
     "category": "Vegetable",
     "name": "Cabbage",
     "price": "$9.00",
@@ -100,7 +100,7 @@
     "scr": "product010.png"
   },
   {
-    "id" : 11,
+    "id" : "11",
     "category": "Fruits",
     "name": "Apple",
     "price": "$5.00",
@@ -110,7 +110,7 @@
     "scr": "apple.png"
   },
   {
-    "id" : 12,
+    "id" : "12",
     "category": "Fruits",
     "name": "Bananas",
     "price": "$8.00",
@@ -120,7 +120,7 @@
     "scr": "bananas.png"
   },
   {
-    "id" : 13,
+    "id" : "13",
     "category": "Fruits",
     "name": "Blueberry",
     "price": "$12.00",
@@ -130,7 +130,7 @@
     "scr": "blueberry.png"
   },
   {
-    "id" : 14,
+    "id" : "14",
     "category": "Fruits",
     "name": "Mango",
     "price": "$12.00",
@@ -140,7 +140,7 @@
     "scr": "mango.png"
   },
   {
-    "id" : 15,
+    "id" : "15",
     "category": "Fruits",
     "name": "Orange",
     "price": "$8.00",
@@ -150,7 +150,7 @@
     "scr": "orange.png"
   },
   {
-    "id" : 16,
+    "id" : "16",
     "category": "Fruits",
     "name": "Pineapple",
     "price": "$17.00",
@@ -160,7 +160,7 @@
     "scr": "pineapple.jpg"
   },
   {
-    "id" : 17,
+    "id" : "17",
     "category": "Nuts",
     "name": "Brown Hazelnut",
     "price": "$25.00",
@@ -170,7 +170,7 @@
     "scr": "nuts.png"
   },
   {
-    "id" : 18,
+    "id" : "18",
     "category": "Nuts",
     "name": "Brown Hazelnut",
     "price": "$25.00",
@@ -180,7 +180,7 @@
     "scr": "nuts.png"
   },
   {
-    "id" : 19,
+    "id" : "19",
     "category": "Nuts",
     "name": "Brown Hazelnut",
     "price": "$25.00",
@@ -190,7 +190,7 @@
     "scr": "nuts.png"
   },
   {
-    "id" : 20,
+    "id" : "20",
     "category": "Nuts",
     "name": "Brown Hazelnut",
     "price": "$25.00",
@@ -200,7 +200,7 @@
     "scr": "nuts.png"
   },
   {
-    "id" : 21,
+    "id" : "21",
     "category": "Nuts",
     "name": "Brown Hazelnut",
     "price": "$25.00",
@@ -210,7 +210,7 @@
     "scr": "nuts.png"
   },
   {
-    "id" : 22,
+    "id" : "22",
     "category": "Nuts",
     "name": "Brown Hazelnut",
     "price": "$25.00",
@@ -220,7 +220,7 @@
     "scr": "nuts.png"
   },
   {
-    "id" : 23,
+    "id" : "23",
     "category": "Spicy",
     "name": "Pepper",
     "price": "$25.00",
@@ -230,7 +230,7 @@
     "scr": "pepper.png"
   },
   {
-    "id" : 24,
+    "id" : "24",
     "category": "Spicy",
     "name": "Salt",
     "price": "$25.00",

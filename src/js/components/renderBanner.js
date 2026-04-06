@@ -1,6 +1,7 @@
 "use strict";
 const renderBanner = () => {
     /*Об'єкт з назвами сторінок де має бути банер. Ключі повинні мати таку саму назву як сторінки в папці pages */
+    /**Ключі мають бути з маленько */
   const pages = {
     aboutus: {
       title: "About Us",
@@ -21,6 +22,10 @@ const renderBanner = () => {
     services: {
       title: "Services",
       bannerClass: "bannerServices"
+    },
+    productpage: {
+      title: "Shop Single",
+      bannerClass: "bannerProduct"
     }
   };
     return (selector) => {

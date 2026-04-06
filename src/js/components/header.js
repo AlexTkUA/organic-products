@@ -1,8 +1,10 @@
 "use strict";
 import { correctPath } from "./url.js";
+import Cart from "./Cart.js";
 const renderHeader = () => {
-  const startUrl = correctPath(true);
-  const html = `<header class = "header">
+  const displayHeader = () => {
+    const startUrl = correctPath(true);
+    const html = `<header class = "header">
         <div class="container header-container">
           <a href="${startUrl === "../../" ? startUrl + "../" : ""}index.html" class = "logo">
             <div class = "logo_img">
@@ -41,11 +43,13 @@ const renderHeader = () => {
           </form>
           <div class = "cart_icon">
             <a href="#" class = "cart_icon_block"><div class = "cart_icon_block_img"><img src="${startUrl}assets/icons/cart.svg" alt=""></div></a>
-            <span class = "cart_icon_count">Cart (0)</span>
+            <span class = "cart_icon_count">Cart (${Cart.getCartAmount()})</span>
           </div>
         </div>
     </header>`;
-
-  return html;
+    return html;
+  };
+  return displayHeader();
+  
 };
 export default renderHeader;

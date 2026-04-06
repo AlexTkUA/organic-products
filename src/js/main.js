@@ -6,7 +6,6 @@ import { correctPath, correctPathToDate } from "./components/url.js";
 import burgerAction from "./components/burger.js";
 import { renderList } from "./components/productList.js";
 import getData from "./components/getData.js";
-
 import renderStats from "./components/statsCount.js";
 import renderNewsList from "./components/new-card.js";
 import renderBanner from "./components/renderBanner.js";
@@ -15,6 +14,7 @@ import renderCategoryList from "./components/categories.js";
 import productFilterCategory from "./components/productFilter.js";
 import renderNewsPage from "./components/article.js";
 import videoAction from "./components/player.js";
+import renderSinglePageProduct from "./components/singleProductPage.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   /**=============Render header================== */
@@ -130,5 +130,16 @@ document.addEventListener("DOMContentLoaded", () => {
   if (document.querySelector("[data-video]")) {
     videoAction();
   }
+  /**=============================================== */
+
+/**=================Single Product Page=============== */
+if (window.location.pathname.includes("productPage")) {
+  getData(`${correctPathToDate(true)}data/products.json`, ".product-info-container")
+  .then(data => {
+    renderSinglePageProduct(data, ".product-info-container");
+  })
+}
+
+/**=================================================== */
+
 });
-/**=============================================== */
