@@ -46,6 +46,7 @@
 @import url("components/services.css");
 @import url("components/product-info.css");
 @import url("components/counter-block.css");
+@import url("components/cart.css");
 
 .hide {
     display: none;

@@ -1,0 +1,27 @@
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 30px;
+    padding: 40px 15px;
+}
+.cart-item {
+    height: 200px;
+    width: 600px;
+}
+.cart-item-photo {
+    height: 200px;
+    width: 200px;
+    flex-shrink: 0;
+}
+.cart-item-photo img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.cart-item-deleter {
+    width: 30px;
+    height: 30px;
+    order: 3;
+}

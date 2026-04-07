@@ -1,14 +1,8 @@
-"use strick";
+"use strict";
 import { correctPath } from "./url.js";
 import Cart from "./Cart.js";
 
-const renderSinglePageProduct = (data, placeholder) => {
-  const getUrlParams = new URLSearchParams(window.location.search);
-  const productIdParam = getUrlParams.get("id");
-  const placeEl = document.querySelector(placeholder);
-  const product = data.find((el) => el.id === productIdParam);
-
-  const renderPrice = (isDiscount, price, discountPrice) => {
+const renderPrice = (isDiscount, price, discountPrice) => {
     if (isDiscount) {
       return `
                     <span class="product-card_lowerBlock_price_previous">${price}</span>
@@ -29,10 +23,18 @@ const renderSinglePageProduct = (data, placeholder) => {
     return html;
   };
 
+const renderSinglePageProduct = (data, placeholder) => {
+  const getUrlParams = new URLSearchParams(window.location.search);
+  const productIdParam = getUrlParams.get("id");
+  const placeEl = document.querySelector(placeholder);
+  const product = data.find((el) => el.id === productIdParam);
+  const pageTitleEl = document.querySelector("title");
+  pageTitleEl.innerText = product.name;
+
   const renderMainInfo = () => {
-    const { category, name, price, discountPrice, isDiscount, rating, scr } =
+    const {id, category, name, price, discountPrice, isDiscount, rating, scr } =
       product;
-    placeEl.innerHTML = `<div class="product-info_main-block">
+    placeEl.innerHTML = `<div id = ${id} class="product-info_main-block">
             <div class="product-info_main-block_photo">
               <img src="${correctPath(true)}assets/productPhotos/${scr}" alt="" />
             </div>
@@ -53,11 +55,8 @@ const renderSinglePageProduct = (data, placeholder) => {
               <div class="counter-block">
                 <span class="counter-block_text">Quantity :</span>
                 <input type = "number" min="1" class="counter-block_amount">
-                <a id = "cart-btn" href="#" class="button btn-dark-color">
-                  <span class="button_text text-white">Shop Now</span>
-                  <div class="button_icon">
-                    <img src="${correctPath(true)}assets/icons/aerrow-blue.svg" alt="" />
-                  </div>
+                <a data-cart-btn href="#" class="button btn-dark-color">
+                  <span class="button_text text-white">Add</span>
                 </a>
               </div>
             </div>
@@ -67,14 +66,14 @@ const renderSinglePageProduct = (data, placeholder) => {
 
   };
   const addToCart = () => {
-    const btnEl = document.querySelector("#cart-btn");
+    const btnEl = document.querySelector("[data-cart-btn]");
     btnEl.addEventListener("click", (event) => {
       event.preventDefault();
       const amountEl = document.querySelector(".counter-block_amount");
       const cartObj = new Cart(product.id, amountEl.value);
       cartObj.saveCart();
       amountEl.value = "1";
-      const cartHederEl = document.querySelector(".cart_icon_count");
+      const cartHederEl = document.querySelector("[data-cart]");
       cartHederEl.textContent = Cart.getCartAmount();
     });
   };
@@ -82,4 +81,4 @@ const renderSinglePageProduct = (data, placeholder) => {
 
   addToCart();
 };
-export default renderSinglePageProduct;
+export {renderSinglePageProduct, renderPrice};

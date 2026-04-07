@@ -26,6 +26,10 @@ const renderBanner = () => {
     productpage: {
       title: "Shop Single",
       bannerClass: "bannerProduct"
+    },
+    cart: {
+      title: "Cart",
+      bannerClass: "bannerCart"
     }
   };
     return (selector) => {

@@ -42,8 +42,8 @@ const renderHeader = () => {
             </div>
           </form>
           <div class = "cart_icon">
-            <a href="#" class = "cart_icon_block"><div class = "cart_icon_block_img"><img src="${startUrl}assets/icons/cart.svg" alt=""></div></a>
-            <span class = "cart_icon_count">Cart (${Cart.getCartAmount()})</span>
+            <a href="${correctPath(true)}pages/cart/index.html" class = "cart_icon_block"><div class = "cart_icon_block_img"><img src="${startUrl}assets/icons/cart.svg" alt=""></div></a>
+            <span class = "cart_icon_count">Cart (<span data-cart >${Cart.getCartAmount()}</span>)</span>
           </div>
         </div>
     </header>`;

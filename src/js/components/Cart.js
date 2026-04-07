@@ -23,11 +23,40 @@ class Cart {
     if (cartFromStorage) {
       const cartObj = JSON.parse(cartFromStorage);
       amount = Object.keys(cartObj).length;
-      console.log(amount);
       return amount;
     } else {
       return amount;
     }
+  }
+  static getCart() {
+    const cartFromStorage = localStorage.getItem("cart");
+    if (cartFromStorage) {
+      return JSON.parse(localStorage.getItem("cart"));
+    } else {
+      return {};
+    }
+  }
+  static increaseAmount (id) {
+    const cart = this.getCart();
+    cart[id] ++;
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }
+  static decreaseAmount (id, isNeedDeleteBlock, element) {
+    const cart = this.getCart();
+    cart[id] --;
+    if (cart[id] <= 0) {
+      delete cart[id];
+      if (isNeedDeleteBlock) {
+      const block = element.closest(`[data-cart-item-${id}]`);
+      block.remove();
+    }
+    }
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }
+  static deleteProduct (id) {
+    const cart = this.getCart();
+    delete cart[id];
+    localStorage.setItem("cart", JSON.stringify(cart));
   }
 }
 export default Cart;

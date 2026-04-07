@@ -28,3 +28,18 @@
   letter-spacing: 0%;
   text-align: left;
 }
+.counter-block_cart-cation {
+  display: flex;
+  gap: 30px;
+}
+.plus, .minus {
+    color: var(--dark-teal-color);
+    font-family: "Roboto";
+    font-size: var(--font-size-h3);
+    font-weight: 800;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: left;
+    z-index: 2;
+    cursor: pointer;
+}
