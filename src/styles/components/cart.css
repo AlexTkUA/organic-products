@@ -73,4 +73,16 @@
   .cart-item-wrapper {
   min-width: 170px;
 }
+.cart-item {
+  gap: 15px;
+}
+}
+.cart-empty {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items:center;
+}
+.cart-empty-title {
+  text-align: center;
 }

@@ -1,7 +1,22 @@
 "use strict";
 import { correctPath } from "./url.js";
 import { getFormatDate } from "./timeDB.js";
-
+/**Цей модуль відповідає за створення сторінки з новиною id новини ми отримуємо з url. 
+ * Потім по id з бази даних знаходимо потрібну нам новину.
+ * Якщо стаття з таком id не знайдема в базі данних то ми перекидаємо користувача на 404 сторінку
+ * В цьому модулі знаходиться головна функція renderNewsPage() яка дефолтно експортується. 
+ * renderNewsPage() не повертає нічого, вона методом append() закидає стоврені компоненти в placeholder 
+ * який має бути на момент виклику функції вже в html (в ручну додається)
+ * Додаткові функції: 
+ * - createParagraph() - створює елемент параграф і повертає його
+ * - createTitle() - створює заголовок і повертає його
+ * - renderPromo() - створює промо блок і повертає його. В цій функції використовуються createTitle(), createParagraph()
+ * в цій функції виклиаються метод з модуля timeD, які форматують дату в необхідну нам строку
+ * - renderList() - стоврює лист ш повертає його
+ * - renderTextBlock() - створює текстовий блок і повертає його
+ * - renderInfoBlock() - створює інформаційний блок і повертає його. В собі викликає createTitle(),
+ *  createParagraph() та renderList()
+ */ 
 const renderNewsPage = (data, placeHolder) => {
   const urlGet = new URLSearchParams(window.location.search);
   const idNeeded = urlGet.get("id");

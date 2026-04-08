@@ -20,6 +20,7 @@ import {
   increase,
   decrease,
   deleteProductEl,
+  renderEmptyCart
 } from "./components/cartPage.js";
 import Cart from "./components/Cart.js";
 
@@ -159,13 +160,13 @@ document.addEventListener("DOMContentLoaded", () => {
         ".cart-container",
       ).then((data) => {
         //renderListCart() має запускатися перша так як інші функції залежать від елемнтів які створюються в цій функції
-        renderListCart(data, ".cart-container");
+        renderListCart(data);
         increase();
         decrease();
         deleteProductEl();
       });
     } else {
-      
+      renderEmptyCart()
     }
   }
   /**=================================================== */

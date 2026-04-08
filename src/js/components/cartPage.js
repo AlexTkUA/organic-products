@@ -45,6 +45,9 @@ const decrease = () => {
         block.remove();
         updateCartIcon();
         updateTotalPrice();
+        if (Cart.getCartAmount() == 0) {
+          renderEmptyCart();
+        }
         return;
       }
       updateQuantity(id);
@@ -62,11 +65,14 @@ const deleteProductEl = () => {
       block.remove();
       updateCartIcon();
       updateTotalPrice();
+      if (Cart.getCartAmount() === 0) {
+        renderEmptyCart()
+      }
     });
   });
 };
-const renderListCart = (data, placeholder) => {
-  const place = document.querySelector(placeholder);
+const renderListCart = (data) => {
+  const place = document.querySelector(".cart-container");
   const cartList = Cart.getCart();
   const arrKeys = Object.keys(cartList);
   let productList = [];
@@ -118,7 +124,24 @@ const countTotalPrice = (productList) => {
   }, 0);
   return totalPrice;
 };
-const renderEmptyCart = (placeholder) => {
-  const place = document.querySelector(placeholder);
+const renderEmptyCart = () => {
+  const place = document.querySelector(".cart-container");
+  place.innerHTML = ``;
+  const wrapper = document.createElement("div");
+  wrapper.classList.add("cart-empty");
+
+  const title = document.createElement("h2");
+  title.classList.add("cart-empty-title", "h1");
+  title.textContent = "CART IS EMPTY :("
+  wrapper.append(title);
+
+  const btnHtml = `<a href="${correctPath(true)}pages/shop/index.html" class="button m0a bmw btn-dark-color">
+            <span class="button_text text-white">Go to shop</span>
+            <div class="button_icon">
+              <img src="${correctPath(true)}assets/icons/aerrow-blue.svg" alt="" />
+            </div>
+          </a>`
+  wrapper.insertAdjacentHTML("beforeend", btnHtml);
+  place.append(wrapper);
 };
-export { renderListCart, increase, decrease, deleteProductEl };
+export { renderListCart, increase, decrease, deleteProductEl, renderEmptyCart};
