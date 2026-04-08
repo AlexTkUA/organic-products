@@ -14,8 +14,14 @@ import renderCategoryList from "./components/categories.js";
 import productFilterCategory from "./components/productFilter.js";
 import renderNewsPage from "./components/article.js";
 import videoAction from "./components/player.js";
-import {renderSinglePageProduct} from "./components/singleProductPage.js";
-import {renderListCart, increase, decrease, deleteProductEl} from "./components/cartPage.js";
+import { renderSinglePageProduct } from "./components/singleProductPage.js";
+import {
+  renderListCart,
+  increase,
+  decrease,
+  deleteProductEl,
+} from "./components/cartPage.js";
+import Cart from "./components/Cart.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   /**=============Render header================== */
@@ -133,26 +139,34 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   /**=============================================== */
 
-/**=================Single Product Page=============== */
-if (window.location.pathname.includes("productPage")) {
-  getData(`${correctPathToDate(true)}data/products.json`, ".product-info-container")
-  .then(data => {
-    renderSinglePageProduct(data, ".product-info-container");
-  })
-}
+  /**=================Single Product Page=============== */
+  if (window.location.pathname.includes("productPage")) {
+    getData(
+      `${correctPathToDate(true)}data/products.json`,
+      ".product-info-container",
+    ).then((data) => {
+      renderSinglePageProduct(data, ".product-info-container");
+    });
+  }
 
-/**=================================================== */
+  /**=================================================== */
 
-/**==================Cart page======================== */
-if (window.location.pathname.includes("cart")) {
-  getData(`${correctPathToDate(true)}data/products.json`, ".cart-container")
-  .then(data => {
-    //renderListCart() має запускатися перша так як інші функції залежать від елемнтів які створюються в цій функції
-    renderListCart(data, ".cart-container");
-    increase();
-    decrease();
-    deleteProductEl();
-  })
-}
-/**=================================================== */
+  /**==================Cart page======================== */
+  if (window.location.pathname.includes("cart")) {
+    if (!Cart.getCartAmount() == 0) {
+      getData(
+        `${correctPathToDate(true)}data/products.json`,
+        ".cart-container",
+      ).then((data) => {
+        //renderListCart() має запускатися перша так як інші функції залежать від елемнтів які створюються в цій функції
+        renderListCart(data, ".cart-container");
+        increase();
+        decrease();
+        deleteProductEl();
+      });
+    } else {
+      
+    }
+  }
+  /**=================================================== */
 });

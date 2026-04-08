@@ -53,26 +53,20 @@ const renderSinglePageProduct = (data, placeholder) => {
                 since the 1500s, when an unknown printer took a galley.
               </p>
               <div class="counter-block">
-                <span class="counter-block_text">Quantity :</span>
-                <input type = "number" min="1" class="counter-block_amount">
                 <a data-cart-btn href="#" class="button btn-dark-color">
                   <span class="button_text text-white">Add</span>
                 </a>
               </div>
             </div>
           </div>`;
-          const amountEl = document.querySelector(".counter-block_amount");
-          amountEl.value = "1";
 
   };
   const addToCart = () => {
     const btnEl = document.querySelector("[data-cart-btn]");
     btnEl.addEventListener("click", (event) => {
       event.preventDefault();
-      const amountEl = document.querySelector(".counter-block_amount");
-      const cartObj = new Cart(product.id, amountEl.value);
+      const cartObj = new Cart(product.id, 1);
       cartObj.saveCart();
-      amountEl.value = "1";
       const cartHederEl = document.querySelector("[data-cart]");
       cartHederEl.textContent = Cart.getCartAmount();
     });

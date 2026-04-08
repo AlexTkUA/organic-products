@@ -41,17 +41,16 @@ class Cart {
     cart[id] ++;
     localStorage.setItem("cart", JSON.stringify(cart));
   }
-  static decreaseAmount (id, isNeedDeleteBlock, element) {
+  static decreaseAmount (id) {
     const cart = this.getCart();
+    let isEmpty = false;
     cart[id] --;
     if (cart[id] <= 0) {
       delete cart[id];
-      if (isNeedDeleteBlock) {
-      const block = element.closest(`[data-cart-item-${id}]`);
-      block.remove();
-    }
+      isEmpty = true;
     }
     localStorage.setItem("cart", JSON.stringify(cart));
+    return isEmpty;
   }
   static deleteProduct (id) {
     const cart = this.getCart();
