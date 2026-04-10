@@ -2,6 +2,7 @@
 import Cart from "./Cart.js";
 import { renderPrice } from "./singleProductPage.js";
 import { correctPath } from "./url.js";
+import determinePrice from "./determinePrice.js";
 let dataCache = []; // Глобальна перемінна !!!!!!!!!!
 const updateQuantity = (id) => {
   const quantityEl = document.querySelector(`[data-quantity-${id}]`);
@@ -38,7 +39,6 @@ const decrease = () => {
   minus.forEach((el) => {
     el.addEventListener("click", () => {
       const id = el.dataset.idMinus;
-      console.log(id);
       const productStatus = Cart.decreaseAmount(id);
       if (productStatus) {
         const block = el.closest(`[data-cart-item-${id}]`);
@@ -66,11 +66,33 @@ const deleteProductEl = () => {
       updateCartIcon();
       updateTotalPrice();
       if (Cart.getCartAmount() === 0) {
-        renderEmptyCart()
+        renderEmptyCart();
       }
     });
   });
 };
+const createOrder = (listProduct) => {
+  const cart = Cart.getCart();
+  return listProduct.map((product) => ({
+    id: product.id,
+    productName: product.name,
+    productPrice: determinePrice(
+      product.isDiscount,
+      product.discountPrice,
+      product.price,
+    ),
+    amount: cart[product.id] || 0,
+  }));
+};
+
+const goToOrderPage = (listProduct) => {
+  const btn = document.querySelector("[data-order-btn]");
+  btn.addEventListener("click", () => {
+    const order = createOrder(listProduct)
+    localStorage.setItem("order", JSON.stringify(order));
+  });
+};
+
 const renderListCart = (data) => {
   const place = document.querySelector(".cart-container");
   const cartList = Cart.getCart();
@@ -106,21 +128,27 @@ const renderListCart = (data) => {
   place.innerHTML = html;
   const htmlPrice = `<div class="cart-price-wrapper">
           <span class="cart-total-price">Total price: $${countTotalPrice(productList)}</span>
-          <a href="src/pages/aboutUs/index.html" class="button btn-dark-color">
-            <span class="button_text text-white">Offer</span>
+          <a data-order-btn href="${correctPath(true)}pages/buypage/index.html" class="button btn-dark-color">
+            <span class="button_text text-white">Buy</span>
           </a>
         </div>`;
   place.insertAdjacentHTML("beforeend", htmlPrice);
+  goToOrderPage(productList);
 };
 const countTotalPrice = (productList) => {
   const cart = Cart.getCart() || {};
   const arrKeys = Object.keys(cart);
   const totalPrice = arrKeys.reduce((accumulator, id) => {
     const product = productList.find((el) => el.id === id);
-    let price = product.isDiscount ? product.discountPrice : product.price;
+    let price = determinePrice(
+      product.isDiscount,
+      product.discountPrice,
+      product.price,
+    );
+    console.log(price);
     price = price.replace("$", ""); //костиль
     const quantity = cart[id];
-    return accumulator = accumulator + (price * quantity);
+    return (accumulator = accumulator + price * quantity);
   }, 0);
   return totalPrice;
 };
@@ -132,7 +160,7 @@ const renderEmptyCart = () => {
 
   const title = document.createElement("h2");
   title.classList.add("cart-empty-title", "h1");
-  title.textContent = "CART IS EMPTY :("
+  title.textContent = "CART IS EMPTY :(";
   wrapper.append(title);
 
   const btnHtml = `<a href="${correctPath(true)}pages/shop/index.html" class="button m0a bmw btn-dark-color">
@@ -140,8 +168,8 @@ const renderEmptyCart = () => {
             <div class="button_icon">
               <img src="${correctPath(true)}assets/icons/aerrow-blue.svg" alt="" />
             </div>
-          </a>`
+          </a>`;
   wrapper.insertAdjacentHTML("beforeend", btnHtml);
   place.append(wrapper);
 };
-export { renderListCart, increase, decrease, deleteProductEl, renderEmptyCart};
+export { renderListCart, increase, decrease, deleteProductEl, renderEmptyCart, updateCartIcon};

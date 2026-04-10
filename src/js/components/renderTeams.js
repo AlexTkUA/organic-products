@@ -3,7 +3,6 @@ const renderTeamsCards = (data, placeHolder) => {
   const place = document.querySelector(placeHolder);
   let html = ``;
   const renderMessengers = (obj) => {
-    console.log(obj);
     const { messengers } = obj;
     let html = ``;
     for (let i = 0; i < messengers.length; i++) {

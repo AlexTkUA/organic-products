@@ -23,6 +23,8 @@ import {
   renderEmptyCart
 } from "./components/cartPage.js";
 import Cart from "./components/Cart.js";
+import renderOrderList from "./components/orderList.js";
+import { sendForm } from "./components/formValidarion.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   /**=============Render header================== */
@@ -170,4 +172,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
   /**=================================================== */
+
+  /**=================Order page======================== */
+  if (window.location.pathname.includes("buypage")) {
+    renderOrderList(".order_info");
+    sendForm("#orderForm")
+  }
+  /**==================================================== */
 });

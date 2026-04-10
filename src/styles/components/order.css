@@ -1,0 +1,140 @@
+.order {
+}
+.order_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px 15px;
+}
+.order_info {
+  min-width: 270px;
+  flex-grow: 2;
+  padding: 30px;
+  max-width: 350px;
+  box-shadow: 0px 20px 35px 0px rgba(167, 167, 167, 0.25);
+  border-radius: 31px 34px 30px 30px;
+}
+.order_info_list_title {
+  text-align: center;
+  display: block;
+  color: var(--dark-teal-color);
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 60px;
+  letter-spacing: 0%;
+}
+.order_info_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+}
+.order_info_list_item {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.order_info_list_item * {
+  color: rgba(82, 92, 96, 1);
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 165.4%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.order_info_list_item_name {
+  min-width: 90px;
+}
+.order_info_totalPrice {
+  color: rgba(82, 92, 96, 1);
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 165.4%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.input_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.order_form {
+  min-height: 350px;
+  display: flex;
+  padding: 30px;
+  box-shadow: 0px 20px 35px 0px rgba(167, 167, 167, 0.25);
+  border-radius: 31px 34px 30px 30px;
+}
+.order_form input {
+  padding: 10px 20px;
+  color: rgba(82, 92, 96, 1);
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 165.4%;
+  letter-spacing: 0%;
+  border-radius: 31px 34px 30px 30px;
+  border: 1px solid rgba(82, 92, 96, 1);
+}
+.order_form label {
+  display: block;
+  color: var(--dark-teal-color);
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 0%;
+}
+#orderForm {
+  position: relative;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form_btn {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.form_btn:hover {
+  background-color: var(--color-mint-cream);
+}
+.input-error {
+  border-color: red !important;
+}
+.input-success {
+  border-color: green !important;
+}
+.form-error {
+  border: 2px solid red;
+}
+.success_message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.success_message_title {
+  text-align: center;
+  display: block;
+  color: var(--dark-teal-color);
+  font-family: "Roboto";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: 0%;
+}
+.success_message_subtitle {
+  color: rgba(82, 92, 96, 1);
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 165.4%;
+  letter-spacing: 0%;
+  text-align: center;
+}

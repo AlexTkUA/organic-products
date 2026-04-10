@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../styles/main.css" />
+  </head>
+  <body>
+    <main class="main">
+      <section class="order">
+        <div class="container order_container">
+          <section class="order_info"></section>
+          <section class="order_form">
+            <form id="orderForm" action="">
+              <div class="input_wrapper">
+                <label for="inputNameId">Your name</label>
+                <input
+                  required
+                  id="inputNameId"
+                  class="input_name"
+                  name="personName"
+                  type="text"
+                  placeholder="Name"
+                />
+                <span class="input_name_error"></span>
+              </div>
+              <div class="input_wrapper">
+                <label for="inputPhoneId">Your phone</label>
+                <input
+                  required
+                  id="inputPhoneId"
+                  class="input_phone"
+                  name="personPhone"
+                  type="tel"
+                  placeholder="Phone"
+                />
+                <span class="input_phone_error"></span>
+              </div>
+              <div class="input_wrapper">
+                <label for="inputEmailId">Your email</label>
+                <input
+                  id="inputEmailId"
+                  class="input_email"
+                  name="personEmail"
+                  type="email"
+                  placeholder="Email"
+                />
+                <span class="input_email_error"></span>
+              </div>
+              <div class="input_wrapper">
+                <input class="form_btn" value="Submit" type="submit" />
+              </div>
+            </form>
+          </section>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="../../js/main.js"></script>
+  </body>
+</html>

@@ -47,6 +47,7 @@
 @import url("components/product-info.css");
 @import url("components/counter-block.css");
 @import url("components/cart.css");
+@import url("components/order.css");
 
 .hide {
     display: none;
