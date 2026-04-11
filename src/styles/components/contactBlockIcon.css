@@ -1,0 +1,55 @@
+.contactBlockIcon {
+  display: flex;
+  gap: 20px;
+  padding: 11px 46px 12px 13px;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid rgba(238, 238, 238, 1);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 1);
+  max-width: 440px;
+}
+
+.contactBlockIcon_icon {
+  flex-shrink: 0;
+  width: 89px;
+  height: 89px;
+  border-radius: 11px;
+  background: rgba(244, 244, 244, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactBlockIcon_icon_img {
+  width: 46px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactBlockIcon_text {
+  /* display: flex;
+    flex-direction: column; */
+}
+.contactUs_block01_text_wrapper {
+  margin-bottom: 34px;
+  margin-top: 34px;
+}
+.contactBlockIcon_text_title {
+  color: var(--dark-teal-color);
+  font-family: "Roboto";
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.contactBlockIcon_text_link {
+  color: rgba(82, 92, 96, 1);
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 165.4%;
+  letter-spacing: 0%;
+  text-align: left;
+}

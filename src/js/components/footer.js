@@ -6,7 +6,7 @@ const renderFooter  = () => {
       <div class="container footer-container">
         <div class="footer_block contact-order">
           <div class="footer_block_contacts">
-            <h3 class="footer_block_contacts_title">Contact Us</h3>
+            <a href = "${correctPath(true)}pages/contactus/index.html" class="footer_block_contacts_title">Contact Us</a>
             <ul class="footer_block_contacts_list">
               <li class="footer_block_contacts_list_item">
                 <span class="footer_block_contacts_list_item_title">Email</span>

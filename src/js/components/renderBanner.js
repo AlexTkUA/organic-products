@@ -2,6 +2,7 @@
 const renderBanner = () => {
     /*Об'єкт з назвами сторінок де має бути банер. Ключі повинні мати таку саму назву як сторінки в папці pages */
     /**Ключі мають бути з маленько */
+    /*Щоб додати банер на сторінку треба в html прописати блок з класом banner. Додати в модуль banner.css клас з background image. Додати ключ з назвою сторінки в об'єкт pages. Назва ключа має бути така як назва папки в якій знаходиться наша сторінка. В ключ записати значення у вигляді об'єкта де прописати два значення: title та bannerClass. В bannerClass записати назву класу який ми створили в banner.css */ 
   const pages = {
     aboutus: {
       title: "About Us",
@@ -30,6 +31,10 @@ const renderBanner = () => {
     cart: {
       title: "Cart",
       bannerClass: "bannerCart"
+    },
+    contactus: {
+      title: "Contact Us",
+      bannerClass: "bannerContactUs"
     }
   };
     return (selector) => {

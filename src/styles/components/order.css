@@ -99,6 +99,7 @@
 .form_btn {
   cursor: pointer;
   transition: 0.3s;
+  background-color: #fff;
 }
 .form_btn:hover {
   background-color: var(--color-mint-cream);

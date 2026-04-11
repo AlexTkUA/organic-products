@@ -32,3 +32,6 @@ background-image: url("../../assets/img/bg-news.png")
 .bannerCart {
   background-image: url("../../assets/img/bg-cart.png")
 }
+.bannerContactUs {
+  background-image: url("../../assets/img/contactUsBanner.jpg")
+}

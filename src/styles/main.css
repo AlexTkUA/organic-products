@@ -48,6 +48,8 @@
 @import url("components/counter-block.css");
 @import url("components/cart.css");
 @import url("components/order.css");
+@import url("components/contactBlockIcon.css");
+@import url("components/contactUs.css");
 
 .hide {
     display: none;
