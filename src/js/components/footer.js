@@ -6,7 +6,7 @@ const renderFooter  = () => {
       <div class="container footer-container">
         <div class="footer_block contact-order">
           <div class="footer_block_contacts">
-            <a href = "${correctPath(true)}pages/contactus/index.html" class="footer_block_contacts_title">Contact Us</a>
+            <a href = "${startPath}pages/contactUs/index.html" class="footer_block_contacts_title">Contact Us</a>
             <ul class="footer_block_contacts_list">
               <li class="footer_block_contacts_list_item">
                 <span class="footer_block_contacts_list_item_title">Email</span>
@@ -45,7 +45,7 @@ const renderFooter  = () => {
               <div class="logo_img">
                 <img src="${startPath}assets/logo/logo.svg" alt="logo" />
               </div>
-              <span class="logo_text">Organick</span>
+              <span class="logo_text">Organic</span>
             </a>
             <p class="paragraph footer-paragraph mb50 text-center">
               Simply dummy text of the printing and typesetting industry. Lorem

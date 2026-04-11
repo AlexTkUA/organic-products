@@ -10,7 +10,7 @@ const renderHeader = () => {
             <div class = "logo_img">
               <img src="${startUrl}assets/logo/logo.svg" alt="logo">
             </div>
-            <span class = "logo_text">Organick</span>
+            <span class = "logo_text">Organic</span>
           </a>
           <div class = "burger show">
             <img src="${startUrl}assets/icons/burger-menu.svg" alt="menu">
