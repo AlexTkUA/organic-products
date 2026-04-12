@@ -25,6 +25,7 @@ import {
 import Cart from "./components/Cart.js";
 import renderOrderList from "./components/orderList.js";
 import { sendForm } from "./components/formValidarion.js";
+import {searching, closeSearchList} from "./components/search.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   /**=============Render header================== */
@@ -178,5 +179,12 @@ document.addEventListener("DOMContentLoaded", () => {
     renderOrderList(".order_info");
     sendForm("#orderForm")
   }
+  /**==================================================== */
+
+
+  /**================== Search ============================ */
+  // renderSearchList();
+  searching();
+  closeSearchList();
   /**==================================================== */
 });

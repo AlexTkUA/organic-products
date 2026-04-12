@@ -54,7 +54,7 @@ const renderSinglePageProduct = (data, placeholder) => {
               </p>
               <div class="counter-block">
                 <a data-cart-btn href="#" class="button btn-dark-color">
-                  <span class="button_text text-white">Add</span>
+                  <span class="button_text text-white">Add to cart</span>
                 </a>
               </div>
             </div>
@@ -63,13 +63,24 @@ const renderSinglePageProduct = (data, placeholder) => {
   };
   const addToCart = () => {
     const btnEl = document.querySelector("[data-cart-btn]");
+    const blockBtnEl = document.querySelector(".counter-block");
+
+    const successEl = document.createElement("div");
+    successEl.classList.add("success-add-toCart");
+    
+    const successImgEl = document.createElement("img");
+    successImgEl.setAttribute("src", `${correctPath(true)}assets/icons/check-mark.png`);
+    successEl.append(successImgEl);
+
     btnEl.addEventListener("click", (event) => {
       event.preventDefault();
+      blockBtnEl.append(successEl);
+      btnEl.remove();
       const cartObj = new Cart(product.id, 1);
       cartObj.saveCart();
       const cartHederEl = document.querySelector("[data-cart]");
       cartHederEl.textContent = Cart.getCartAmount();
-    });
+    }, { once: true });
   };
   renderMainInfo();
 

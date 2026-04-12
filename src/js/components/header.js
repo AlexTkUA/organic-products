@@ -38,7 +38,7 @@ const renderHeader = () => {
           <form id = "formForSearch" class = "search" action="">
             <div class = search_placeholder>
               <input class = "search_placeholder_input" type="text">
-              <button type="submit" class="search_placeholder_btn"><div class="search_placeholder_btn_img"><img src="${startUrl}assets/icons/search.svg" alt=""></div></button>
+              <button class="search_placeholder_btn"><div class="search_placeholder_btn_img"><img src="${startUrl}assets/icons/search.svg" alt=""></div></button>
             </div>
           </form>
           <div class = "cart_icon">

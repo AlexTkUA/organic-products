@@ -46,6 +46,10 @@
     letter-spacing: 0%;
     text-align: center;
 }
+.success-add-toCart {
+    width: 70px;
+
+}
 @media (max-width: 690px) {
     .product-info_main-block {
         flex-direction: column;
