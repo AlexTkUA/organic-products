@@ -68,6 +68,25 @@
 .emailForm_form_btn:hover {
     background-color: var(--color-hover-dark);
 }
+.emailForm_success {
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 28px 47px 28px 47px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 1);
+    color: var(--dark-teal-color);
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0%;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
 @media (max-width: 480px) {
     .emailForm_form_emailInput {
         min-width: auto;

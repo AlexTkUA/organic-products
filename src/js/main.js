@@ -26,6 +26,7 @@ import Cart from "./components/Cart.js";
 import renderOrderList from "./components/orderList.js";
 import { sendForm } from "./components/formValidarion.js";
 import {searching, closeSearchList} from "./components/search.js";
+import sendEmailForm from "./components/emailFormAction.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   /**=============Render header================== */
@@ -38,10 +39,12 @@ document.addEventListener("DOMContentLoaded", () => {
     .insertAdjacentHTML("afterend", renderFooter());
   /*===========================================*/
 
-  /**=============Render footer================== */
+  /**=============EmailForm================== */
   document
     .querySelector(".main")
     .insertAdjacentHTML("beforeend", renderEmailForm());
+    sendEmailForm();
+    
   /*===========================================*/
 
   /**============Burger Action ==============*/
@@ -183,8 +186,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   /**================== Search ============================ */
-  // renderSearchList();
   searching();
   closeSearchList();
   /**==================================================== */
+
+
 });

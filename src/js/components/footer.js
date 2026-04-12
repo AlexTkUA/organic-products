@@ -52,15 +52,15 @@ const renderFooter  = () => {
               Ipsum simply dummy text of the printing
             </p>
             <div class="footer_block_messages">
-              <a href="#" class="messenger"
+              <a href="" class="messenger"
                 ><div class="messenger_icon">
                   <img src="${startPath}assets/logo/insta.svg" alt="" /></div
               ></a>
-              <a href="#" class="messenger"
+              <a href="" class="messenger"
                 ><div class="messenger_icon">
                   <img src="${startPath}assets/logo/fb.svg" alt="" /></div
               ></a>
-              <a href="#" class="messenger"
+              <a href="" class="messenger"
                 ><div class="messenger_icon">
                   <img src="${startPath}assets/logo/twiter.svg" alt="" /></div
               ></a>
@@ -71,18 +71,10 @@ const renderFooter  = () => {
           <div class="footer_block_links">
             <h3 class="footer_block_links_title">Utility Pages</h3>
             <ul class="footer_block_links_list">
-              <li class="footer_block_links_list_item">
-                <a href="#">Style Guide</a>
-              </li>
-              <li class="footer_block_links_list_item">
-                <a href="#">Password Protected</a>
-              </li>
-              <li class="footer_block_links_list_item">
-                <a href="#">Licences</a>
-              </li>
-              <li class="footer_block_links_list_item">
-                <a href="#">Changelog</a>
-              </li>
+              <li class = "footer_block_links_list_item"><a href="${startPath}pages/aboutUs/index.html">About</a></li>
+              <li class = "footer_block_links_list_item"><a href="${startPath}pages/shop/index.html">Shop</a></li>
+              <li class = "footer_block_links_list_item"><a href="${startPath}pages/news/index.html">News</a></li>
+              <li class = "footer_block_links_list_item"><a href="${startPath}pages/services/index.html">Services</a></li>
               <li class="footer_block_links_list_item">
                 <a href="${startPath}pages/standards/index.html">Quality Standard</a>
               </li>
